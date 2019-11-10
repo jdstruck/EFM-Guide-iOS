@@ -23,8 +23,8 @@ struct LandmarkDetail: View {
             VStack(alignment: .leading) {
                 Text(landmark.name)
                     .font(.title)
-                    .padding()
-                Text("Quick points")
+                    //.padding()
+                Text("\nQuick points")
                     .font(.headline)
                 Text(landmark.quickPoints)
                     .font(.body)

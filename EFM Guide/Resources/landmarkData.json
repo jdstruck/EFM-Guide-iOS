@@ -20,8 +20,8 @@
     {
         "name": "Baseline fetal heart rate (FHR)",
         "management": "",
-        "quickPoints": "",
-        "details": "",
+        "quickPoints": "- the approximate mean FHR rounded to increments of 5 bpm during 10 minute window, excluding accels, decels, and periods of marked FHR variability (> 25 bpm).\n- bradycardia: baseline < 110 bpm.\n- tachycardia: baseline > 160 bpm.",
+        "details": "- must be at least 2 minutes of identifiable baseline segments (not necessarily contiguous) in any 10 minute window otherwise baseline for that period is indeterminate.  In such case, refer to previous 10 minute window baseline.",
         "category": "Lakes",
         "city": "Port Alsworth",
         "state": "Alaska",
@@ -38,8 +38,8 @@
     {
         "name": "Baseline FHR variability",
         "management": "",
-        "quickPoints": "",
-        "details": "",
+        "quickPoints": "- fluctuations in baseline that are irregular in amplitude and frequency\n- visually quantified as amplitude from peak-to-trough in bpm.\n- absent: undetectable change in amplitude\n- minimal: amplitude range ≤ 5 bpm\n- moderate: amplitude range 6-25 bpm\n- marked: amplitude range > 25 bpm",
+        "details": "- determined in 10 minute window, excluding accels and decels.\n- no distinction is made between short-term variability ('beat-to-beat') and long-term variability, because in actual practice they are visually determined as a unit.",
         "category": "Mountains",
         "city": "Skagway",
         "state": "Alaska",
@@ -56,7 +56,7 @@
     {
         "name": "Accelerations",
         "management": "",
-        "quickPoints": "",
+        "quickPoints": "- visually abrupt increase in FHR, < 30 seconds from onset to peak of accel\n- accel must peak ≥ 15 bpm above baseline and last ≥ 15 seconds from onset to return to baseline\n- accel ≥ 2 minutes is prolonged\n- accel ≥ 10 minutes is baseline change\n- before 32 weeks gestational age, definition accel as above except 10 bpm rise and 10 second duration qualify.",
         "details": "",
         "category": "Lakes",
         "city": "Browning",
@@ -74,7 +74,7 @@
     {
         "name": "Early decelerations",
         "management": "",
-        "quickPoints": "",
+        "quickPoints": "- visually apparent usually symmetric gradual decrease and return of FHR associated with a uterine contraction\n- gradual FHR decrease defined as ≥ 30 seconds from onset to nadir\n- decrease measured from onset to nadir\n- nadir occurs same time as ctx peak\n- in most cases, onset, nadir, recovery of decel are coincident with start, peak, and end of ctx, respectively.",
         "details": "",
         "category": "Lakes",
         "city": "Twin Lakes",
@@ -92,7 +92,7 @@
     {
         "name": "Variable decelerations",
         "management": "",
-        "quickPoints": "",
+        "quickPoints": "- visually apparent abrupt decrease in FHR\n- abrupt FHR decrease defined as < 30 seconds from onset to nadir\n- decrease measured from onset to nadir\n- FHR decrease ≥ 15 bpm, lasts 15 seconds to 2 minutes duration\n- when variable decels associated with ctx, their onset, depth, and duration commonly vary with successive ctx.",
         "details": "",
         "category": "Mountains",
         "city": "West Glacier",
@@ -110,7 +110,7 @@
     {
         "name": "Late decelerations",
         "management": "",
-        "quickPoints": "",
+        "quickPoints": "- visually apparent usually symmetric gradual decrease and return of FHR associated with a uterine contraction\n- gradual FHR decrease defined as ≥ 30 seconds from onset to nadir\n- size measured from onset to nadir; note that unlike variable decelerations which must be ≥ 15 bpm below baseline, the ACOG definition cites no minimum size of descent for late decelerations\n- decel is delayed, with nadir occurring after peak of contraction\n- in most cases, onset, nadir, recovery of late decel occur after start, peak, and end of ctx respectively.",
         "details": "",
         "category": "Rivers",
         "city": "Eaking",
@@ -128,7 +128,7 @@
     {
         "name": "Prolonged decelerations",
         "management": "",
-        "quickPoints": "",
+        "quickPoints": "- visually apparent decrease in FHR below baseline\n- FHR decrease is ≥ 15 bpm\n- decel duration is ≥ 2 minutes and < 10 minutes (≥ 10 minutes makes the decel a change of FHR baseline and potentially fetal bradycardia if FHR < 110)",
         "details": "",
         "category": "Mountains",
         "city": "Icy Bay",
@@ -146,8 +146,8 @@
     {
         "name": "Decels in general",
         "management": "",
-        "quickPoints": "",
-        "details": "",
+        "quickPoints": "- decels are recurrent when they occur with ≥ 50% of ctx in any 20 minute window; decels occuring with < 50% of ctx are considered intermittent.",
+        "details": "- several terms and findings require further research investigation to determine their predictive value: slow return of FHR after end of ctx; biphasic decels; tachycardia after variable decels; accels preceeding and/or following decels, sometimes called 'shoulders' and 'overshoots'; fluctuations in FHR in the trough of the decel; grading systems for depth and duration of decels.",
         "category": "Lakes",
         "city": "Willow",
         "state": "Alaska",
