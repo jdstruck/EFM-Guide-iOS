@@ -18,7 +18,7 @@ struct LandmarkRow: View {
             Spacer()
             landmark.image
             .resizable()
-            .frame(width: 50, height: 50)
+            .frame(width: 40, height: 40)
         }
     }
 }

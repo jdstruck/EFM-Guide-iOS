@@ -2,8 +2,8 @@
     {
         "name": "Uterine Contractions",
         "management": "",
-        "quick points": "",
-        "details": "",
+        "quickPoints": "- # ctx in 10 minute period averaged over a 30 minute period \n- normal ≤ 5 ctx in 10 min (averaged over 30 min) \n- tachysystole > 5 ctx per 10 min \n- ctx duration, intensity, and relaxation time between ctx also important",
+        "details": "- tachysystole should always be qualified as to presence or absence of associated FHR declerations. \n- term tachysystole applies to both spontaneous and stimulated labor, but clinical response may differ. \n- terms hyperstimulation and hypercontractility are not defined and should be abandoned.",
         "category": "Rivers",
         "city": "Twentynine Palms",
         "state": "California",
@@ -20,7 +20,7 @@
     {
         "name": "Baseline fetal heart rate (FHR)",
         "management": "",
-        "quick points": "",
+        "quickPoints": "",
         "details": "",
         "category": "Lakes",
         "city": "Port Alsworth",
@@ -38,7 +38,7 @@
     {
         "name": "Baseline FHR variability",
         "management": "",
-        "quick points": "",
+        "quickPoints": "",
         "details": "",
         "category": "Mountains",
         "city": "Skagway",
@@ -56,7 +56,7 @@
     {
         "name": "Accelerations",
         "management": "",
-        "quick points": "",
+        "quickPoints": "",
         "details": "",
         "category": "Lakes",
         "city": "Browning",
@@ -74,7 +74,7 @@
     {
         "name": "Early decelerations",
         "management": "",
-        "quick points": "",
+        "quickPoints": "",
         "details": "",
         "category": "Lakes",
         "city": "Twin Lakes",
@@ -92,7 +92,7 @@
     {
         "name": "Variable decelerations",
         "management": "",
-        "quick points": "",
+        "quickPoints": "",
         "details": "",
         "category": "Mountains",
         "city": "West Glacier",
@@ -110,7 +110,7 @@
     {
         "name": "Late decelerations",
         "management": "",
-        "quick points": "",
+        "quickPoints": "",
         "details": "",
         "category": "Rivers",
         "city": "Eaking",
@@ -128,7 +128,7 @@
     {
         "name": "Prolonged decelerations",
         "management": "",
-        "quick points": "",
+        "quickPoints": "",
         "details": "",
         "category": "Mountains",
         "city": "Icy Bay",
@@ -146,7 +146,7 @@
     {
         "name": "Decels in general",
         "management": "",
-        "quick points": "",
+        "quickPoints": "",
         "details": "",
         "category": "Lakes",
         "city": "Willow",
@@ -164,7 +164,7 @@
     {
         "name": "Sinusoidal pattern",
         "management": "",
-        "quick points": "",
+        "quickPoints": "",
         "details": "",
         "category": "Lakes",
         "city": "Newhalem",
