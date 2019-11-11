@@ -1,14 +1,14 @@
 //
-//  LandmarkRow.swift
-//  EFM
+//  DetailButtonRow.swift
+//  EFM Guide
 //
-//  Created by Jesse Struck on 11/9/19.
+//  Created by Jesse Struck on 11/11/19.
 //  Copyright © 2019 Jesse Struck. All rights reserved.
 //
 
 import SwiftUI
 
-struct LandmarkRow: View {
+struct DetailButtonRow: View {
     var landmark: Landmark
 
     var body: some View {
@@ -22,7 +22,7 @@ struct LandmarkRow: View {
     }
 }
 
-struct LandmarkRow_Previews: PreviewProvider {
+struct DetailButtonRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             LandmarkRow(landmark: landmarkData[0])

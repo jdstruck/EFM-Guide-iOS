@@ -1,0 +1,348 @@
+commit 2006e295b056c71de9c77abe8e1164cac29edb3c
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Sun Nov 10 16:44:41 2019 -0500
+
+    Details page buttons, i.e. Management/Picture
+
+ EFM Guide/LandmarkDetail.swift        | 18 ++++++++++++++----
+ EFM Guide/Resources/landmarkData.json |  2 +-
+ 2 files changed, 15 insertions(+), 5 deletions(-)
+
+commit 66bf8ce017bdce3750f0fd6e19b6304297e45841
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Sun Nov 10 12:16:15 2019 -0500
+
+    populate more Definitions
+
+ EFM Guide/Resources/landmarkData.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit ce6d9e124a81ef731eb99c462571ea50af186eeb
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Sun Nov 10 12:07:29 2019 -0500
+
+    populate more Definitions
+
+ EFM Guide/LandmarkDetail.swift        |  4 ++--
+ EFM Guide/Resources/landmarkData.json | 22 +++++++++++-----------
+ 2 files changed, 13 insertions(+), 13 deletions(-)
+
+commit de14a1c50cf151b6b43461287894e76e8c0dc432
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Sat Nov 9 22:01:04 2019 -0500
+
+    add details and quick points
+
+ EFM Guide/LandmarkDetail.swift        | 35 ++++++++++++++++++++++-------------
+ EFM Guide/LandmarkRow.swift           |  2 +-
+ EFM Guide/Models/Landmark.swift       |  2 ++
+ EFM Guide/Resources/landmarkData.json | 22 +++++++++++-----------
+ 4 files changed, 36 insertions(+), 25 deletions(-)
+
+commit ee365362b2db0565c3423099dd1899148bdeb79d
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Sat Nov 9 21:36:36 2019 -0500
+
+    populate Definitions, link up images
+
+ EFM Guide/LandmarkList.swift           |   4 +-
+ EFM Guide/LandmarkRow.swift            |   8 ++-
+ EFM Guide/Resources/Accel.jpg          | Bin 0 -> 38757 bytes
+ EFM Guide/Resources/Baseline.jpg       | Bin 0 -> 50454 bytes
+ EFM Guide/Resources/Cat1.jpg           | Bin 0 -> 69514 bytes
+ EFM Guide/Resources/Cat2.jpg           | Bin 0 -> 143483 bytes
+ EFM Guide/Resources/Cat3.jpg           | Bin 0 -> 160486 bytes
+ EFM Guide/Resources/EFMData.json       |  10 ++++
+ EFM Guide/Resources/EarlyDecel.jpg     | Bin 0 -> 35517 bytes
+ EFM Guide/Resources/LateDecel.jpg      | Bin 0 -> 80763 bytes
+ EFM Guide/Resources/PTL.jpg            | Bin 0 -> 78453 bytes
+ EFM Guide/Resources/ProlongedDecel.jpg | Bin 0 -> 100466 bytes
+ EFM Guide/Resources/Sinusoidal.jpg     | Bin 0 -> 80296 bytes
+ EFM Guide/Resources/Variability.jpg    | Bin 0 -> 92251 bytes
+ EFM Guide/Resources/VariableDecel.jpg  | Bin 0 -> 59324 bytes
+ EFM Guide/Resources/bulb.png           | Bin 0 -> 4057 bytes
+ EFM Guide/Resources/camera34.png       | Bin 0 -> 4133 bytes
+ EFM Guide/Resources/caution.png        | Bin 0 -> 421 bytes
+ EFM Guide/Resources/ctx.jpg            | Bin 0 -> 136740 bytes
+ EFM Guide/Resources/email.png          | Bin 0 -> 428 bytes
+ EFM Guide/Resources/file.png           | Bin 0 -> 324 bytes
+ EFM Guide/Resources/house.png          | Bin 0 -> 699 bytes
+ EFM Guide/Resources/info.png           | Bin 0 -> 450 bytes
+ EFM Guide/Resources/key.png            | Bin 0 -> 422 bytes
+ EFM Guide/Resources/landmarkData.json  |  98 ++++++++++++++++-----------------
+ EFM Guide/Resources/maternal.jpg       | Bin 0 -> 144484 bytes
+ EFM Guide/Resources/newborn.jpg        | Bin 0 -> 96894 bytes
+ EFM Guide/Resources/pPROM.jpg          | Bin 0 -> 86535 bytes
+ EFM Guide/Resources/start.png          | Bin 0 -> 3739 bytes
+ 29 files changed, 66 insertions(+), 54 deletions(-)
+
+commit cdbfbe52eccb1060556e5d040bd1a0ed2bde26cb
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Sat Nov 9 15:46:30 2019 -0500
+
+    recreate basic template
+
+ EFM Guide/AppDelegate.swift                  |  37 ++++++
+ EFM Guide/Base.lproj/LaunchScreen.storyboard |  25 ++++
+ EFM Guide/ContentView.swift                  |  21 ++++
+ EFM Guide/Info.plist                         |  60 +++++++++
+ EFM Guide/LandmarkDetail.swift               |  47 +++++++
+ EFM Guide/LandmarkList.swift                 |  32 +++++
+ EFM Guide/LandmarkRow.swift                  |  32 +++++
+ EFM Guide/Models/Data.swift                  |  69 ++++++++++
+ EFM Guide/Models/Landmark.swift              |  45 +++++++
+ EFM Guide/Models/charleyrivers.jpg           | Bin 0 -> 229148 bytes
+ EFM Guide/Models/chilkoottrail.jpg           | Bin 0 -> 63243 bytes
+ EFM Guide/Models/chincoteague.jpg            | Bin 0 -> 129431 bytes
+ EFM Guide/Models/hiddenlake.jpg              | Bin 0 -> 261088 bytes
+ EFM Guide/Models/icybay.jpg                  | Bin 0 -> 304196 bytes
+ EFM Guide/Models/lakemcdonald.jpg            | Bin 0 -> 254380 bytes
+ EFM Guide/Models/landmarkData.json           | 182 +++++++++++++++++++++++++++
+ EFM Guide/Models/rainbowlake.jpg             | Bin 0 -> 243387 bytes
+ EFM Guide/Models/silversalmoncreek.jpg       | Bin 0 -> 309101 bytes
+ EFM Guide/Models/stmarylake.jpg              | Bin 0 -> 199022 bytes
+ EFM Guide/Models/turtlerock.jpg              | Bin 0 -> 276013 bytes
+ EFM Guide/Models/twinlake.jpg                | Bin 0 -> 178148 bytes
+ EFM Guide/Models/umbagog.jpg                 | Bin 0 -> 279040 bytes
+ EFM Guide/Resources/charleyrivers.jpg        | Bin 0 -> 229148 bytes
+ EFM Guide/Resources/chilkoottrail.jpg        | Bin 0 -> 63243 bytes
+ EFM Guide/Resources/chincoteague.jpg         | Bin 0 -> 129431 bytes
+ EFM Guide/Resources/hiddenlake.jpg           | Bin 0 -> 261088 bytes
+ EFM Guide/Resources/icybay.jpg               | Bin 0 -> 304196 bytes
+ EFM Guide/Resources/lakemcdonald.jpg         | Bin 0 -> 254380 bytes
+ EFM Guide/Resources/landmarkData.json        | 182 +++++++++++++++++++++++++++
+ EFM Guide/Resources/rainbowlake.jpg          | Bin 0 -> 243387 bytes
+ EFM Guide/Resources/silversalmoncreek.jpg    | Bin 0 -> 309101 bytes
+ EFM Guide/Resources/stmarylake.jpg           | Bin 0 -> 199022 bytes
+ EFM Guide/Resources/turtlerock.jpg           | Bin 0 -> 276013 bytes
+ EFM Guide/Resources/twinlake.jpg             | Bin 0 -> 178148 bytes
+ EFM Guide/Resources/umbagog.jpg              | Bin 0 -> 279040 bytes
+ EFM Guide/SceneDelegate.swift                |  59 +++++++++
+ EFM Guide/Supporting Views/CircleImage.swift |  26 ++++
+ EFM Guide/Supporting Views/MapView.swift     |  30 +++++
+ 38 files changed, 847 insertions(+)
+
+commit 1713c41a2e69947b409084a2331ad04c8cc9cf6a
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Sat Nov 9 15:45:39 2019 -0500
+
+    recreate basic template
+
+ EFM/Default-568h@2x.png                          | Bin 18594 -> 0 bytes
+ EFM/EFM Guide/AppDelegate.swift                  |  39 -----
+ EFM/EFM Guide/Base.lproj/LaunchScreen.storyboard |  25 ----
+ EFM/EFM Guide/Info.plist                         |  60 --------
+ EFM/EFM Guide/LandmarkDetail.swift               |  47 ------
+ EFM/EFM Guide/LandmarkList.swift                 |  32 ----
+ EFM/EFM Guide/LandmarkRow.swift                  |  32 ----
+ EFM/EFM Guide/Models/Data.swift                  |  69 ---------
+ EFM/EFM Guide/Models/Landmark.swift              |  45 ------
+ EFM/EFM Guide/Resources/charleyrivers.jpg        | Bin 229148 -> 0 bytes
+ EFM/EFM Guide/Resources/chilkoottrail.jpg        | Bin 63243 -> 0 bytes
+ EFM/EFM Guide/Resources/chincoteague.jpg         | Bin 129431 -> 0 bytes
+ EFM/EFM Guide/Resources/hiddenlake.jpg           | Bin 261088 -> 0 bytes
+ EFM/EFM Guide/Resources/icybay.jpg               | Bin 304196 -> 0 bytes
+ EFM/EFM Guide/Resources/lakemcdonald.jpg         | Bin 254380 -> 0 bytes
+ EFM/EFM Guide/Resources/landmarkData.json        | 182 -----------------------
+ EFM/EFM Guide/Resources/rainbowlake.jpg          | Bin 243387 -> 0 bytes
+ EFM/EFM Guide/Resources/silversalmoncreek.jpg    | Bin 309101 -> 0 bytes
+ EFM/EFM Guide/Resources/stmarylake.jpg           | Bin 199022 -> 0 bytes
+ EFM/EFM Guide/Resources/turtlerock.jpg           | Bin 276013 -> 0 bytes
+ EFM/EFM Guide/Resources/twinlake.jpg             | Bin 178148 -> 0 bytes
+ EFM/EFM Guide/Resources/umbagog.jpg              | Bin 279040 -> 0 bytes
+ EFM/EFM Guide/SceneDelegate.swift                |  60 --------
+ EFM/EFM Guide/Supporting Views/CircleImage.swift |  26 ----
+ EFM/EFM Guide/Supporting Views/MapView.swift     |  30 ----
+ EFM/EFMTests/EFMTests.swift                      |  34 -----
+ EFM/EFMTests/Info.plist                          |  22 ---
+ EFM/EFMUITests/EFMUITests.swift                  |  43 ------
+ EFM/EFMUITests/Info.plist                        |  22 ---
+ 29 files changed, 768 deletions(-)
+
+commit 34b5b1fdcf134988e2cd6d6bce1b932937c3e921
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Sat Nov 9 15:21:45 2019 -0500
+
+    update app name
+
+ EFM/Default-568h@2x.png                                 | Bin 0 -> 18594 bytes
+ EFM/{EFM => EFM Guide}/AppDelegate.swift                |   0
+ .../Base.lproj/LaunchScreen.storyboard                  |   0
+ EFM/{EFM => EFM Guide}/Info.plist                       |   0
+ EFM/{EFM => EFM Guide}/LandmarkDetail.swift             |   0
+ EFM/{EFM => EFM Guide}/LandmarkList.swift               |   0
+ EFM/{EFM => EFM Guide}/LandmarkRow.swift                |   0
+ EFM/{EFM => EFM Guide}/Models/Data.swift                |   0
+ EFM/{EFM => EFM Guide}/Models/Landmark.swift            |   0
+ EFM/{EFM => EFM Guide}/Resources/charleyrivers.jpg      | Bin
+ EFM/{EFM => EFM Guide}/Resources/chilkoottrail.jpg      | Bin
+ EFM/{EFM => EFM Guide}/Resources/chincoteague.jpg       | Bin
+ EFM/{EFM => EFM Guide}/Resources/hiddenlake.jpg         | Bin
+ EFM/{EFM => EFM Guide}/Resources/icybay.jpg             | Bin
+ EFM/{EFM => EFM Guide}/Resources/lakemcdonald.jpg       | Bin
+ EFM/{EFM => EFM Guide}/Resources/landmarkData.json      |   0
+ EFM/{EFM => EFM Guide}/Resources/rainbowlake.jpg        | Bin
+ EFM/{EFM => EFM Guide}/Resources/silversalmoncreek.jpg  | Bin
+ EFM/{EFM => EFM Guide}/Resources/stmarylake.jpg         | Bin
+ EFM/{EFM => EFM Guide}/Resources/turtlerock.jpg         | Bin
+ EFM/{EFM => EFM Guide}/Resources/twinlake.jpg           | Bin
+ EFM/{EFM => EFM Guide}/Resources/umbagog.jpg            | Bin
+ EFM/{EFM => EFM Guide}/SceneDelegate.swift              |   0
+ .../Supporting Views/CircleImage.swift                  |   0
+ EFM/{EFM => EFM Guide}/Supporting Views/MapView.swift   |   0
+ 25 files changed, 0 insertions(+), 0 deletions(-)
+
+commit b98857be513d5692f7fe6a8b2c9a359c5bf71765
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Sat Nov 9 14:44:07 2019 -0500
+
+    create basic 'landmarks' template
+
+ "EFM v3.1 Xcode 6 \306\222.zip"            | Bin 0 -> 1651072 bytes
+ EFM/EFM/AppDelegate.swift                  |  39 +++++++
+ EFM/EFM/Base.lproj/LaunchScreen.storyboard |  25 ++++
+ EFM/EFM/Info.plist                         |  60 ++++++++++
+ EFM/EFM/LandmarkDetail.swift               |  47 ++++++++
+ EFM/EFM/LandmarkList.swift                 |  32 +++++
+ EFM/EFM/LandmarkRow.swift                  |  32 +++++
+ EFM/EFM/Models/Data.swift                  |  69 +++++++++++
+ EFM/EFM/Models/Landmark.swift              |  45 +++++++
+ EFM/EFM/Resources/charleyrivers.jpg        | Bin 0 -> 229148 bytes
+ EFM/EFM/Resources/chilkoottrail.jpg        | Bin 0 -> 63243 bytes
+ EFM/EFM/Resources/chincoteague.jpg         | Bin 0 -> 129431 bytes
+ EFM/EFM/Resources/hiddenlake.jpg           | Bin 0 -> 261088 bytes
+ EFM/EFM/Resources/icybay.jpg               | Bin 0 -> 304196 bytes
+ EFM/EFM/Resources/lakemcdonald.jpg         | Bin 0 -> 254380 bytes
+ EFM/EFM/Resources/landmarkData.json        | 182 +++++++++++++++++++++++++++++
+ EFM/EFM/Resources/rainbowlake.jpg          | Bin 0 -> 243387 bytes
+ EFM/EFM/Resources/silversalmoncreek.jpg    | Bin 0 -> 309101 bytes
+ EFM/EFM/Resources/stmarylake.jpg           | Bin 0 -> 199022 bytes
+ EFM/EFM/Resources/turtlerock.jpg           | Bin 0 -> 276013 bytes
+ EFM/EFM/Resources/twinlake.jpg             | Bin 0 -> 178148 bytes
+ EFM/EFM/Resources/umbagog.jpg              | Bin 0 -> 279040 bytes
+ EFM/EFM/SceneDelegate.swift                |  60 ++++++++++
+ EFM/EFM/Supporting Views/CircleImage.swift |  26 +++++
+ EFM/EFM/Supporting Views/MapView.swift     |  30 +++++
+ EFM/EFMTests/EFMTests.swift                |  34 ++++++
+ EFM/EFMTests/Info.plist                    |  22 ++++
+ EFM/EFMUITests/EFMUITests.swift            |  43 +++++++
+ EFM/EFMUITests/Info.plist                  |  22 ++++
+ 29 files changed, 768 insertions(+)
+
+commit 6e48386c6dc17fbc1f0e65e74eefb10e658e5ef2
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Fri Nov 1 09:23:02 2019 -0400
+
+    rm -rf old version
+
+ EFM guide.xcodeproj/project.pbxproj                |  586 ---
+ .../project.xcworkspace/contents.xcworkspacedata   |    7 -
+ .../xcshareddata/IDEWorkspaceChecks.plist          |    8 -
+ .../Josh.xcuserdatad/WorkspaceSettings.xcsettings  |   10 -
+ .../Josh.xcuserdatad/xcschemes/PreOpEval2.xcscheme |   96 -
+ .../xcschemes/xcschememanagement.plist             |   27 -
+ .../xcdebugger/Breakpoints_v2.xcbkptlist           |    5 -
+ .../xcschemes/PreOpEval2.xcscheme                  |   96 -
+ .../xcschemes/xcschememanagement.plist             |   27 -
+ PreOpEval2/Accel.jpg                               |  Bin 38757 -> 0 bytes
+ PreOpEval2/AppDelegate.h                           |   15 -
+ PreOpEval2/AppDelegate.m                           |   59 -
+ ...inberg's conflicted copy 2014-10-17).storyboard | 4529 --------------------
+ PreOpEval2/Base.lproj/Main.storyboard              | 3660 ----------------
+ PreOpEval2/Baseline.jpg                            |  Bin 50454 -> 0 bytes
+ PreOpEval2/Cat1.jpg                                |  Bin 69514 -> 0 bytes
+ PreOpEval2/Cat2.jpg                                |  Bin 143483 -> 0 bytes
+ PreOpEval2/Cat3.jpg                                |  Bin 160486 -> 0 bytes
+ PreOpEval2/EFM guide-Info.plist                    |   38 -
+ PreOpEval2/EFM guide-Prefix.pch                    |   16 -
+ PreOpEval2/EarlyDecel.jpg                          |  Bin 35517 -> 0 bytes
+ PreOpEval2/LateDecel.jpg                           |  Bin 80763 -> 0 bytes
+ PreOpEval2/PTL.jpg                                 |  Bin 78453 -> 0 bytes
+ PreOpEval2/ProlongedDecel.jpg                      |  Bin 100466 -> 0 bytes
+ PreOpEval2/Sinusoidal.jpg                          |  Bin 80296 -> 0 bytes
+ PreOpEval2/Variability.jpg                         |  Bin 92251 -> 0 bytes
+ PreOpEval2/VariableDecel.jpg                       |  Bin 59324 -> 0 bytes
+ PreOpEval2/ViewController.h                        |   13 -
+ PreOpEval2/ViewController.m                        |   38 -
+ PreOpEval2/bulb.png                                |  Bin 4057 -> 0 bytes
+ PreOpEval2/camera34.png                            |  Bin 4133 -> 0 bytes
+ PreOpEval2/caution.png                             |  Bin 421 -> 0 bytes
+ PreOpEval2/ctx.jpg                                 |  Bin 136740 -> 0 bytes
+ PreOpEval2/email.png                               |  Bin 428 -> 0 bytes
+ PreOpEval2/en.lproj/InfoPlist.strings              |    2 -
+ PreOpEval2/file.png                                |  Bin 324 -> 0 bytes
+ PreOpEval2/house.png                               |  Bin 699 -> 0 bytes
+ PreOpEval2/info.png                                |  Bin 450 -> 0 bytes
+ PreOpEval2/key.png                                 |  Bin 422 -> 0 bytes
+ PreOpEval2/main.m                                  |   18 -
+ PreOpEval2/maternal.jpg                            |  Bin 144484 -> 0 bytes
+ PreOpEval2/newborn.jpg                             |  Bin 96894 -> 0 bytes
+ PreOpEval2/pPROM.jpg                               |  Bin 86535 -> 0 bytes
+ PreOpEval2/start.png                               |  Bin 3739 -> 0 bytes
+ PreOpEval2Tests/EFM guideTests-Info.plist          |   22 -
+ PreOpEval2Tests/PreOpEval2Tests.m                  |   34 -
+ PreOpEval2Tests/en.lproj/InfoPlist.strings         |    2 -
+ 47 files changed, 9308 deletions(-)
+
+commit c8de939e93897719a301ba692c58027f1400608d
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Thu Oct 31 12:13:51 2019 -0400
+
+    add EFM 3.1 xcode 6, i.e. original project
+
+ EFM guide.xcodeproj/project.pbxproj                | 586 +++++++++++++++++++++
+ .../project.xcworkspace/contents.xcworkspacedata   |   7 +
+ .../xcshareddata/IDEWorkspaceChecks.plist          |   8 +
+ .../Josh.xcuserdatad/WorkspaceSettings.xcsettings  |  10 +
+ .../Josh.xcuserdatad/xcschemes/PreOpEval2.xcscheme |  96 ++++
+ .../xcschemes/xcschememanagement.plist             |  27 +
+ .../xcdebugger/Breakpoints_v2.xcbkptlist           |   5 +
+ .../xcschemes/PreOpEval2.xcscheme                  |  96 ++++
+ .../xcschemes/xcschememanagement.plist             |  27 +
+ 9 files changed, 862 insertions(+)
+
+commit 565d0f4695a15c753c696241409cf2091ba73a23
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Thu Oct 31 12:05:00 2019 -0400
+
+    add EFM 3.1 xcode 6, i.e. original project
+
+ PreOpEval2/Accel.jpg                               |  Bin 0 -> 38757 bytes
+ PreOpEval2/AppDelegate.h                           |   15 +
+ PreOpEval2/AppDelegate.m                           |   59 +
+ ...inberg's conflicted copy 2014-10-17).storyboard | 4529 ++++++++++++++++++++
+ PreOpEval2/Base.lproj/Main.storyboard              | 3660 ++++++++++++++++
+ PreOpEval2/Baseline.jpg                            |  Bin 0 -> 50454 bytes
+ PreOpEval2/Cat1.jpg                                |  Bin 0 -> 69514 bytes
+ PreOpEval2/Cat2.jpg                                |  Bin 0 -> 143483 bytes
+ PreOpEval2/Cat3.jpg                                |  Bin 0 -> 160486 bytes
+ PreOpEval2/EFM guide-Info.plist                    |   38 +
+ PreOpEval2/EFM guide-Prefix.pch                    |   16 +
+ PreOpEval2/EarlyDecel.jpg                          |  Bin 0 -> 35517 bytes
+ PreOpEval2/LateDecel.jpg                           |  Bin 0 -> 80763 bytes
+ PreOpEval2/PTL.jpg                                 |  Bin 0 -> 78453 bytes
+ PreOpEval2/ProlongedDecel.jpg                      |  Bin 0 -> 100466 bytes
+ PreOpEval2/Sinusoidal.jpg                          |  Bin 0 -> 80296 bytes
+ PreOpEval2/Variability.jpg                         |  Bin 0 -> 92251 bytes
+ PreOpEval2/VariableDecel.jpg                       |  Bin 0 -> 59324 bytes
+ PreOpEval2/ViewController.h                        |   13 +
+ PreOpEval2/ViewController.m                        |   38 +
+ PreOpEval2/bulb.png                                |  Bin 0 -> 4057 bytes
+ PreOpEval2/camera34.png                            |  Bin 0 -> 4133 bytes
+ PreOpEval2/caution.png                             |  Bin 0 -> 421 bytes
+ PreOpEval2/ctx.jpg                                 |  Bin 0 -> 136740 bytes
+ PreOpEval2/email.png                               |  Bin 0 -> 428 bytes
+ PreOpEval2/en.lproj/InfoPlist.strings              |    2 +
+ PreOpEval2/file.png                                |  Bin 0 -> 324 bytes
+ PreOpEval2/house.png                               |  Bin 0 -> 699 bytes
+ PreOpEval2/info.png                                |  Bin 0 -> 450 bytes
+ PreOpEval2/key.png                                 |  Bin 0 -> 422 bytes
+ PreOpEval2/main.m                                  |   18 +
+ PreOpEval2/maternal.jpg                            |  Bin 0 -> 144484 bytes
+ PreOpEval2/newborn.jpg                             |  Bin 0 -> 96894 bytes
+ PreOpEval2/pPROM.jpg                               |  Bin 0 -> 86535 bytes
+ PreOpEval2/start.png                               |  Bin 0 -> 3739 bytes
+ PreOpEval2Tests/EFM guideTests-Info.plist          |   22 +
+ PreOpEval2Tests/PreOpEval2Tests.m                  |   34 +
+ PreOpEval2Tests/en.lproj/InfoPlist.strings         |    2 +
+ 38 files changed, 8446 insertions(+)

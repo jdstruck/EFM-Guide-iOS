@@ -13,21 +13,15 @@ struct LandmarkDetail: View {
 
     var body: some View {
         VStack(alignment: .center) {
-            
-//            MapView(coordinate: landmark.locationCoordinate)
-//                .frame(height: 300)
-
-//            CircleImage(image: landmark.image)
-//                .offset(x: 0, y: -130)
-//                .padding(.bottom, -130)
             VStack(alignment: .leading) {
                 Text(landmark.name)
                 .font(.title)
-            } .padding()
+            }
+            .padding()
             VStack {
                 HStack(alignment: .top) {
                     NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                        LandmarkRow(landmark: landmark)
+                        DetailButtonRow(landmark: landmark)
                         } .padding()
                 }
             }
@@ -43,13 +37,6 @@ struct LandmarkDetail: View {
                 Text(landmark.details)
                     .font(.body)
 
-//                HStack(alignment: .top) {
-//                    Text(landmark.park)
-//                        .font(.subheadline)
-//                    Spacer()
-//                    Text(landmark.state)
-//                        .font(.subheadline)
-//                }
             }
             .padding()
 
