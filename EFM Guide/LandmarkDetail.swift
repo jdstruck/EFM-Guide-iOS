@@ -25,7 +25,7 @@ struct LandmarkDetail: View {
                         NavigationLink(destination: ManagementList()) {
                             DetailManagementButtonRow(landmark: landmark)
                         } .padding()
-                        NavigationLink(destination: CircleImage(image: landmark.image)) {
+                        NavigationLink(destination: DetailPictureView(image: landmark.image)) {
                             DetailImageButtonRow(landmark: landmark)
                         } .padding()
                     }
