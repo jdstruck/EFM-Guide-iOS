@@ -21,8 +21,11 @@ struct LandmarkDetail: View {
             VStack {
                 HStack(alignment: .top) {
                     NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                        DetailButtonRow(landmark: landmark)
-                        } .padding()
+                        DetailManagementButtonRow(landmark: landmark)
+                    } .padding()
+                    NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+                        DetailManagementButtonRow(landmark: landmark)
+                    } .padding()
                 }
             }
             VStack(alignment: .leading) {

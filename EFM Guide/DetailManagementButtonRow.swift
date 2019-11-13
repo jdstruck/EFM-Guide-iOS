@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct DetailButtonRow: View {
+struct DetailManagementButtonRow: View {
     var landmark: Landmark
 
     var body: some View {
