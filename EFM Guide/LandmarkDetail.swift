@@ -12,6 +12,7 @@ struct LandmarkDetail: View {
     var landmark: Landmark
 
     var body: some View {
+        NavigationView {
         VStack(alignment: .center) {
             VStack(alignment: .leading) {
                 Text(landmark.name)
@@ -19,15 +20,17 @@ struct LandmarkDetail: View {
             }
             .padding()
             VStack {
-                HStack(alignment: .top) {
-                    NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                        DetailManagementButtonRow(landmark: landmark)
-                    } .padding()
-                    NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                        DetailManagementButtonRow(landmark: landmark)
-                    } .padding()
+                
+                    HStack(alignment: .top) {
+                        NavigationLink(destination: ManagementList()) {
+                            DetailManagementButtonRow(landmark: landmark)
+                        } .padding()
+                        NavigationLink(destination: CircleImage(image: landmark.image)) {
+                            DetailImageButtonRow(landmark: landmark)
+                        } .padding()
+                    }
                 }
-            }
+           
             VStack(alignment: .leading) {
                 
                     //.padding()
@@ -47,6 +50,7 @@ struct LandmarkDetail: View {
         }
         .navigationBarTitle(Text(verbatim: landmark.name), displayMode: .inline)
     }
+         }
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {

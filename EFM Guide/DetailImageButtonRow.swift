@@ -13,7 +13,7 @@ struct DetailImageButtonRow: View {
 
     var body: some View {
         HStack {
-            Text(landmark.name)
+            Text("Picture")
             Spacer()
             landmark.image
             .resizable()
