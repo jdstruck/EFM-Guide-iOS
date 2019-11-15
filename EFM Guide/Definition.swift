@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct LandmarkDetail: View {
+struct Definition: View {
     var landmark: Landmark
 
     var body: some View {
@@ -55,6 +55,6 @@ struct LandmarkDetail: View {
 
 struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkDetail(landmark: landmarkData[0])
+        Definition(landmark: landmarkData[0])
     }
 }

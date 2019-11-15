@@ -12,8 +12,8 @@ struct ManagementList: View {
     var body: some View {
         NavigationView {
             List(landmarkData) { landmark in
-                NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                    LandmarkRow(landmark: landmark)
+                NavigationLink(destination: Definition(landmark: landmark)) {
+                    DefinitionRow(landmark: landmark)
                 }
             }
             .navigationBarTitle(Text("EFM Guide"))
@@ -24,7 +24,7 @@ struct ManagementList: View {
 struct ManagementList_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone XS Max", "iPhone SE"], id: \.self) { deviceName in
-            LandmarkList()
+            DefinitionsList()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }

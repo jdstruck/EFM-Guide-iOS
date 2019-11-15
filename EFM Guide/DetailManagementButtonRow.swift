@@ -25,8 +25,8 @@ struct DetailManagementButtonRow: View {
 struct DetailButtonRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            LandmarkRow(landmark: landmarkData[0])
-            LandmarkRow(landmark: landmarkData[1])
+            DefinitionRow(landmark: landmarkData[0])
+            DefinitionRow(landmark: landmarkData[1])
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }
