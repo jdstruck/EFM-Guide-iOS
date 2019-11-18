@@ -12,7 +12,7 @@ struct DefinitionView: View {
     var landmark: Landmark
 
     var body: some View {
-        NavigationView {
+        //NavigationView {
         VStack(alignment: .center) {
             VStack(alignment: .leading) {
                 Text(landmark.name)
@@ -49,7 +49,7 @@ struct DefinitionView: View {
             Spacer()
         }
         .navigationBarTitle(Text(verbatim: landmark.name), displayMode: .inline)
-    }
+    //}
          }
 }
 

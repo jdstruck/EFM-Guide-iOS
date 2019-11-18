@@ -10,15 +10,18 @@ import SwiftUI
 
 struct StartPageList: View {
     var body: some View {
-        
-        NavigationView {
-            //List(landmarkData) { landmark in
-                NavigationLink(destination: DefinitionsList()) {
-                    StartPageRow(rowName: "Definitions")
-                }
-            //}
-            .navigationBarTitle(Text("EFM Guide"))
+        TabView {
+            NavigationView {
+                //List(landmarkData) { landmark in
+                    NavigationLink(destination: DefinitionsList()) {
+                        StartPageRow(rowName: "Definitions")
+                    }
+                //}
+                .navigationBarTitle(Text("EFM Guide"))
+                .navigationViewStyle(StackNavigationViewStyle())
 
+
+            }
         }
     }
 }
