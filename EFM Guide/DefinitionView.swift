@@ -14,11 +14,11 @@ struct DefinitionView: View {
     var body: some View {
         //NavigationView {
         VStack(alignment: .center) {
-            VStack(alignment: .leading) {
-                Text(landmark.name)
-                .font(.title)
-            }
-            .padding()
+//            VStack(alignment: .leading) {
+//                Text(landmark.name)
+//                .font(.title)
+//            }
+//            .padding()
             VStack {
                 
                     HStack(alignment: .top) {

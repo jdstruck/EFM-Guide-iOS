@@ -10,14 +10,14 @@ import SwiftUI
 
 struct ManagementList: View {
     var body: some View {
-        NavigationView {
+        //NavigationView {
             List(landmarkData) { landmark in
                 NavigationLink(destination: DefinitionView(landmark: landmark)) {
                     DefinitionRow(landmark: landmark)
                 }
             }
-            .navigationBarTitle(Text("EFM Guide"))
-        }
+            .navigationBarTitle(Text("Management"))
+        //}
     }
 }
 
