@@ -1,19 +1,19 @@
 //
-//  DetailButtonRow.swift
+//  DetailImageButtonRow.swift
 //  EFM Guide
 //
-//  Created by Jesse Struck on 11/11/19.
+//  Created by Jesse Struck on 11/13/19.
 //  Copyright © 2019 Jesse Struck. All rights reserved.
 //
 
 import SwiftUI
 
-struct DetailManagementButtonRow: View {
+struct DefinitionImageButtonRow: View {
     var landmark: Landmark
 
     var body: some View {
         HStack {
-            Text(landmark.name)
+            Text("Picture")
             Spacer()
             landmark.image
             .resizable()
@@ -22,7 +22,7 @@ struct DetailManagementButtonRow: View {
     }
 }
 
-struct DetailButtonRow_Previews: PreviewProvider {
+struct DefinitionImageButtonRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             DefinitionRow(landmark: landmarkData[0])

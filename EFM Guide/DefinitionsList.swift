@@ -12,11 +12,11 @@ struct DefinitionsList: View {
     var body: some View {
         NavigationView {
             List(landmarkData) { landmark in
-                NavigationLink(destination: Definition(landmark: landmark)) {
+                NavigationLink(destination: DefinitionView(landmark: landmark)) {
                     DefinitionRow(landmark: landmark)
                 }
             }
-            .navigationBarTitle(Text("EFM Guide"))
+            .navigationBarTitle(Text("Definitions"))
         }
     }
 }

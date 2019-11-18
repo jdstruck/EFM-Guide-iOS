@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Definition: View {
+struct DefinitionView: View {
     var landmark: Landmark
 
     var body: some View {
@@ -23,10 +23,10 @@ struct Definition: View {
                 
                     HStack(alignment: .top) {
                         NavigationLink(destination: ManagementList()) {
-                            DetailManagementButtonRow(landmark: landmark)
+                            DefinitionManagementButtonRow(landmark: landmark)
                         } .padding()
                         NavigationLink(destination: DetailPictureView(image: landmark.image)) {
-                            DetailImageButtonRow(landmark: landmark)
+                            DefinitionImageButtonRow(landmark: landmark)
                         } .padding()
                     }
                 }
@@ -53,8 +53,8 @@ struct Definition: View {
          }
 }
 
-struct LandmarkDetail_Previews: PreviewProvider {
+struct DefinitionView_Previews: PreviewProvider {
     static var previews: some View {
-        Definition(landmark: landmarkData[0])
+        DefinitionView(landmark: landmarkData[0])
     }
 }
