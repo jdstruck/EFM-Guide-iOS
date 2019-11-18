@@ -16,7 +16,10 @@ struct DefinitionsList: View {
                     DefinitionRow(landmark: landmark)
                 }
             }
+            .navigationBarHidden(true)
             .navigationBarTitle(Text("Definitions"))
+            .navigationBarBackButtonHidden(true)
+            .navigationViewStyle(StackNavigationViewStyle)
         }
     }
 }
