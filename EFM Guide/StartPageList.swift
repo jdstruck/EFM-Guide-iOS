@@ -16,27 +16,28 @@ struct StartPageList: View {
                 List {
                     Section(header: Text("Definitions of Tracing Findings")) {
                             NavigationLink(destination: DefinitionsList()) {
-                                StartPageRow(rowName: "• definitions of individual EFM tracing findings and patterns with pictures")
+                                StartPageRow(rowName: "• definitions of individual EFM tracing findings and patterns with pictures\n")
                         }
                     }
                     Section(header: Text("Tracing Interpretations")) {
                             NavigationLink(destination: DefinitionsList()) {
-                                StartPageRow(rowName: "• category I, II, III EFM tracing interpretations")
+                                StartPageRow(rowName: "• category I, II, III EFM tracing interpretations\n")
                         }
                     }
                     Section(header: Text("Tracing Intrapartum Management")) {
                             NavigationLink(destination: DefinitionsList()) {
-                                StartPageRow(rowName: "• suggested clinical management responses of tracing findings and interpretations")
+                                StartPageRow(rowName: "• suggested clinical management responses of tracing findings and interpretations\n")
                         }
                     }
                     Section(header: Text("Systematic Tracing Evaluation")) {
                             NavigationLink(destination: DefinitionsList()) {
-                                StartPageRow(rowName: "• systematic approach to EFM tracing evaluation")
+                                StartPageRow(rowName: "• systematic approach to EFM tracing evaluation\n")
                         }
                     }
                 }
                 .navigationBarTitle(Text("EFM Guide"))
                 .navigationViewStyle(StackNavigationViewStyle())
+            //.listStyle(GroupedListStyle())
             }
         }
     }
