@@ -13,14 +13,30 @@ struct StartPageList: View {
         TabView {
             NavigationView {
                 //List(landmarkData) { landmark in
-                    NavigationLink(destination: DefinitionsList()) {
-                        StartPageRow(rowName: "Definitions")
+                List {
+                    Section(header: Text("Definitions of Tracing Findings")) {
+                            NavigationLink(destination: DefinitionsList()) {
+                                StartPageRow(rowName: "• definitions of individual EFM tracing findings and patterns with pictures")
+                        }
                     }
-                //}
+                    Section(header: Text("Tracing Interpretations")) {
+                            NavigationLink(destination: DefinitionsList()) {
+                                StartPageRow(rowName: "• category I, II, III EFM tracing interpretations")
+                        }
+                    }
+                    Section(header: Text("Tracing Intrapartum Management")) {
+                            NavigationLink(destination: DefinitionsList()) {
+                                StartPageRow(rowName: "• suggested clinical management responses of tracing findings and interpretations")
+                        }
+                    }
+                    Section(header: Text("Systematic Tracing Evaluation")) {
+                            NavigationLink(destination: DefinitionsList()) {
+                                StartPageRow(rowName: "• systematic approach to EFM tracing evaluation")
+                        }
+                    }
+                }
                 .navigationBarTitle(Text("EFM Guide"))
                 .navigationViewStyle(StackNavigationViewStyle())
-
-
             }
         }
     }
