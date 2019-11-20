@@ -39,7 +39,8 @@ struct StartPageList: View {
                 .navigationViewStyle(StackNavigationViewStyle())
             //.listStyle(GroupedListStyle())
             }
-        }
+            } .tabItem({Text("Home")}).tag(0)
+        
     }
 }
 
