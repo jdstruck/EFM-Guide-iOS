@@ -15,7 +15,10 @@ struct StartPageTabView: View {
                 .tabItem {Text("Home")
             }
             ManagementList()
-                .tabItem {Text("Home")
+                .tabItem {Text("Management")
+            }
+            DefinitionsList()
+                .tabItem {Text("Definitions")
             }
         }
     }
