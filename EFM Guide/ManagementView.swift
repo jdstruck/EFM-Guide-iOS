@@ -34,11 +34,11 @@ struct ManagementView: View {
             VStack(alignment: .leading) {
                 
                     //.padding()
-                Text("Quick points")
+                Text("Meaning")
                     .font(.headline)
                 Text(mgmt_obj.meaning)
                     .font(.body)
-                Text("\nDetails")
+                Text("\nManagement")
                     .font(.headline)
                 Text(mgmt_obj.management)
                     .font(.body)
@@ -55,6 +55,6 @@ struct ManagementView: View {
 
 struct ManagementView_Previews: PreviewProvider {
     static var previews: some View {
-        ManagementView(mgmt_obj: managementJSON[0])
+        ManagementView(mgmt_obj: managementJSON[1])
     }
 }

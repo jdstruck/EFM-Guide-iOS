@@ -2,71 +2,71 @@
     {
         "id": 1001,
         "name": "Category I tracing",
-        "meaning": "- # ctx in 10 minute period averaged over a 30 minute period \n- normal ≤ 5 ctx in 10 min (averaged over 30 min) \n- tachysystole > 5 ctx per 10 min \n- ctx duration, intensity, and relaxation time between ctx also important",
-        "management": "- tachysystole should always be qualified as to presence or absence of associated FHR declerations. \n- term tachysystole applies to both spontaneous and stimulated labor, but clinical response may differ. \n- terms hyperstimulation and hypercontractility are not defined and should be abandoned.",
+        "meaning": "- Category I FHR tracings are normal, that is, they are not associated with fetal acidemia.  ",
+        "management": "- Category I tracings require no special management aside from routine care coupled with continuous or intermittent monitoring and periodic re-evaluation such as every 30 minutes during 1st stage and every 15 minutes during 2nd stage.\nChange in approach and management need only occur should this favorable Category I tracing change into Category II or III.",
         "imageName": "ctx"
     },
     {
         "id": 1002,
         "name": "Category II tracing",
-        "meaning": "- the approximate mean FHR rounded to increments of 5 bpm during 10 minute window, excluding accels, decels, and periods of marked FHR variability (> 25 bpm).\n- bradycardia: baseline < 110 bpm.\n- tachycardia: baseline > 160 bpm.",
-        "management": "- must be at least 2 minutes of identifiable baseline segments (not necessarily contiguous) in any 10 minute window otherwise baseline for that period is indeterminate.  In such case, refer to previous 10 minute window baseline.",
+        "meaning": "- Meaning:\nCategory II FHR tracings are indeterminate in that they do not clearly indicate normal or abnormal fetal acid-base status.\nHowever, because accelerations (spontaneous or stimulated) and moderate variability are so highly predictive of normal fetal acid-base status, ACOG offers potential general approaches noted below based on their presence or absence in a Category II tracing.  ACOG also offers specific recommendations in response to individual findings found in Category II tracings.  Go to Home icon, choose Tracing Intrapartum Management, and choose the individual findings to review.\n\nGen Mgmt with Accels or Mod-Variability:\nContinue surveillance and employ intrauterine resuscitative measures aimed at suspected cause (see below)",
+        "management": "- Gen Mgmt with No Accels + Min/Absent-Var:\nEmploy intrauterine resuscitative measures aimed at suspected cause (see below); if tracing not improved or tracing worsens to Category III, consider delivery\n\nINTRAUTERINE RESUSCITATIVE MEASURES:\n\n- to promote fetal oxygenation and improve uteroplacental blood flow associated with recurrent late decels, prolonged decels or bradycardia, and minimal or absent FHR variability, consider lateral positioning, oxygen administration, IV fluid bolus, reduction of uterine contraction frequency\n\n- to reduce uterine activity associated with tachysystole and a Category II tracing, consider discontinuation oxytocin or cervical ripening agent, administration of tocolytic\n\n- to alleviate umbilical cord compression associated with recurrent variable decals, prolonged decals, or bradycardia, consider maternal repositioning, amnioinfusion, elevation of presenting fetal part if prolapsed cord is noted.",
         "imageName": "Baseline"
     },
     {
         "id": 1003,
         "name": "Category III tracing",
-        "meaning": "- fluctuations in baseline that are irregular in amplitude and frequency\n- visually quantified as amplitude from peak-to-trough in bpm.\n- absent: undetectable change in amplitude\n- minimal: amplitude range ≤ 5 bpm\n- moderate: amplitude range 6-25 bpm\n- marked: amplitude range > 25 bpm",
-        "management": "- determined in 10 minute window, excluding accels and decels.\n- no distinction is made between short-term variability ('beat-to-beat') and long-term variability, because in actual practice they are visually determined as a unit.",
+        "meaning": "- Meaning:Category III FHR tracings are abnormal and convey increased risk for fetal acidemia when observed.  Such tracings, although not highly predictive, are associated with increased risk of neonatal encephalopathy, cerebral palsy, and neonatal acidosis.",
+        "management": "- Management:\n- category III tracings most often require prompt delivery.\n- while intrauterine resuscitative measures are being implemented, a timeframe for delivery is determined and communicated to the patient and all caregivers.\n\nManagement interventions will vary according to clinical circumstances but may include lateral positioning; oxygen administration; IV fluid bolus; reduction of uterine contraction frequency via reduced or discontinued induction/ripening agents or via use of tocolytic medication; amnioinfusion; and in event of cord prolapse elevation of presenting fetal part..",
         "imageName": "Variability"
     },
     {
         "id": 1004,
         "name": "Tachysystole",
-        "meaning": "- visually abrupt increase in FHR, < 30 seconds from onset to peak of accel\n- accel must peak ≥ 15 bpm above baseline and last ≥ 15 seconds from onset to return to baseline\n- accel ≥ 2 minutes is prolonged\n- accel ≥ 10 minutes is baseline change\n- before 32 weeks gestational age, definition accel as above except 10 bpm rise and 10 second duration qualify.",
-        "management": "",
+        "meaning": "- Tachysystole is > 5 contractions in 10 minutes averaged over 30 minutes.  Excessively frequent contractions may or may not impair perfusion to the fetus intrapartum.  Hence evaluation of the FHR tracing is key to determining appropriate management.",
+        "management": " if spontaneous labor and Category I FHR tracing, no intervention required, just continue monitoring.\n- if spontaneous labor and Category II or III tracing, employ intrauterine resuscitative measures such as lateral positioning, oxygen administration, IV fluid bolus, amnioinfusion, eval for cord prolapse; if no tracing resolution with such measures, consider tocolytic\n- if induction/augmentation and Category I tracing, decrease uterotonics\n- if induction/augmentation and Category II or III tracing, decrease or stop uterotonics; if no tracing resolution, employ intrauterine resuscitative measures as described above; if no tracing resolution, consider tocolytic",
         "imageName": "Accel"
     },
     {
         "id": 1005,
         "name": "Minimal variability",
-        "meaning": "- visually apparent usually symmetric gradual decrease and return of FHR associated with a uterine contraction\n- gradual FHR decrease defined as ≥ 30 seconds from onset to nadir\n- decrease measured from onset to nadir\n- nadir occurs same time as ctx peak\n- in most cases, onset, nadir, recovery of decel are coincident with start, peak, and end of ctx, respectively.",
-        "management": "",
+        "meaning": "Meaning:\nMinimal FHR variability can suggest maternal medication (opioid, magnesium), fetal sleep cycle, or fetal acidemia, thus consideration of cause is key.\nGoal:\n- consider causes\n- if uteroplacental insufficiency is considered cause, goal is promotion of fetal oxygenation and improved uteroplacental blood flow",
+        "management": "Goal:\n- consider causes\n- if uteroplacental insufficiency is considered cause, goal is promotion of fetal oxygenation and improved uteroplacental blood flow\n\nManagement:\n- if opiate suspected cause, observe for resolution within 1-2 hours after administration\n- if sleep cycle suspected, observe for resolution within 20-60 minutes\n- if uteroplacental insufficiency suspected, intrauterine resuscitative measures to promote fetal oxygenation and uteroplacental bloodflow should be employed such as lateral positioning, oxygen administration, IV fluid bolus, and reduction of uterine contraction frequency\n- if minimal variability persists without reassuring findings such as accels (spontaneous or stimulated) or normal scalp pH and remains unexplained and unresolved after resuscitative measures, fetal acidemia should be considered and managed accordingly.",
         "imageName": "EarlyDecel"
     },
     {
         "id": 1006,
-        "name": "Variable decelerations",
-        "meaning": "- visually apparent abrupt decrease in FHR\n- abrupt FHR decrease defined as < 30 seconds from onset to nadir\n- decrease measured from onset to nadir\n- FHR decrease ≥ 15 bpm, lasts 15 seconds to 2 minutes duration\n- when variable decels associated with ctx, their onset, depth, and duration commonly vary with successive ctx.",
-        "management": "",
+        "name": "Intermittant variable decels",
+        "meaning": "Meaning:\nIntermittant variable decelerations are defined as occurring with < 50% of contractions.  They are associated with normal perinatal outcomes.",
+        "management": "Management:\n- they do not require any treatment\n- characterization of intermittant variables includes frequency, depth, duration, ctx pattern, and other FHR aspects such as baseline variability",
         "imageName": "VariableDecel"
     },
     {
         "id": 1007,
-        "name": "Late decelerations",
-        "meaning": "- visually apparent usually symmetric gradual decrease and return of FHR associated with a uterine contraction\n- gradual FHR decrease defined as ≥ 30 seconds from onset to nadir\n- size measured from onset to nadir; note that unlike variable decelerations which must be ≥ 15 bpm below baseline, the ACOG definition cites no minimum size of descent for late decelerations\n- decel is delayed, with nadir occurring after peak of contraction\n- in most cases, onset, nadir, recovery of late decel occur after start, peak, and end of ctx respectively.",
-        "management": "",
+        "name": "Recurrent variable decels",
+        "meaning": "Meaning:\nRecurrent variable decelerations are defined as occurring with ≥ 50% of contractions.  When they progress to greater depth and longer duration they are more indicative of impending fetal acidemia.  Conversely, the presence of moderate FHR variability or spontaneous/induced accelerations suggests lack of fetal acidemia.",
+        "management": "Management:\n- intervention should be directed at relieving umbilical cord compression\n- first step is often maternal repositioning\n- amnioinfusion has limited evidence for improved neonatal outcomes but does decrease recurrence of variable decels and the rate of c-section for 'suspected fetal distress'\n- other adjunctive intrauterine resuscitative measures to improve fetal oxygenation may also be employed",
         "imageName": "LateDecel",
     },
     {
         "id": 1008,
-        "name": "Prolonged decelerations",
-        "meaning": "- visually apparent decrease in FHR below baseline\n- FHR decrease is ≥ 15 bpm\n- decel duration is ≥ 2 minutes and < 10 minutes (≥ 10 minutes makes the decel a change of FHR baseline and potentially fetal bradycardia if FHR < 110)",
-        "management": "",
+        "name": "Recurrent late decels",
+        "meaning": "Meaning:\nRecurrent late decelerations are thought to reflect transient or chronic uteroplacental insufficiency.  Identifiable causes include maternal hypotension, uterine tachysystole, and maternal hypoxia.",
+        "management": "Management:\n- pursue an underlying cause and direct management towards it\n- general management includes promotion of fetal oxygenation and improved uteroplacental blood flow via interventions such as lateral positioning, oxygen administration, IV fluid bolus, reduction of uterine contraction frequency if excessive\n- given the low predictive value of late decelerations for acidemia and their false postive rate for fetal neurologic injury, evaluation for other signs of favorable fetal acid-base status such as accelerations or moderate variability may both be useful to assess acidemia risk\n- if recurrent late decels with minimal variability and absent accels continue despite intrauterine resuscitative measures, fetal acidemia should be considered and need for prompt delivery evaluated\n- if the baseline with recurrent late decels loses variability altogether, then the tracing has deteriorated to Category III and should be managed accordingly",
         "imageName": "ProlongedDecel"
     },
     {
         "id": 1009,
-        "name": "Decels in general",
-        "meaning": "- decels are recurrent when they occur with ≥ 50% of ctx in any 20 minute window; decels occuring with < 50% of ctx are considered intermittent.",
-        "management": "- several terms and findings require further research investigation to determine their predictive value: slow return of FHR after end of ctx; biphasic decels; tachycardia after variable decels; accels preceeding and/or following decels, sometimes called 'shoulders' and 'overshoots'; fluctuations in FHR in the trough of the decel; grading systems for depth and duration of decels.",
+        "name": "Fetal tachycardia",
+        "meaning": "Meaning:\nFetal tachycardia has baseline > 160 bpm for >= 10 minutes. It may suggest an identifiable cause such as an infection (chorio, pyelo, other maternal infxns), medications (terbutaline, cocaine, other stimulants), maternal medical disorders (hyperthyrodism), obstetric conditions (abruption), fetal bleeding), and fetal tachyarrhythmias (often associated with FHR > 200). In isolation, fetal tachycardia is poorly predictive for fetal hypoxema or acidemia, unless accompanied by minimal or absent variability or recurrent decels or both.",
+        "management": "Management:\npursue an underlying cause and direct management towards it\n-note FHR variability, as minimal variability and lack of accels may suggest fetal acidema.",
         "imageName": ""
     },
     {
         "id": 1010,
-        "name": "Sinusoidal pattern",
-        "meaning": "- specific FHR pattern defined as having a visually apparent, smooth sine wave-like undulating pattern in FHR baseline with a cycle frequency of 3-5 per minute that persists for ≥ 20 minutes.\n- sinusoidal pattern is definitive for Category III tracing interpretation",
-        "management": "",
+        "name": "Prolonged decel/bradycardia",
+        "meaning": "Meaning:\nProlonged deceleration or fetal bradycardia suggest the presence of an identifiable cause such as maternal hypotension, umbilical cord prolapse or occlusion, rapid fetal descent, tachysystole, placental abruption, or uterine rupture.  Rarely bradycardia is from congenital cardiac anomaly or conduction abnormality but the onset of such is usually in 2nd trimester, not during labor.",
+        "management": "Management:\n- prolonged deceleration often prompts intervention well before the 10 minute threshold is passed to qualify the finding as bradycardia, thus the management for the two items is considered together, and you need not wait to distinguish the two.\n- pursue an underlying cause and direct management towards it\n- if maternal hypotension suspected (e.g. post-epidural), consider IV fluid bolus, maternal repositioning, and other methods to correct maternal hypotension\n- if tachysystole suspected, consider discontinuation of oxytocin or cervical ripening agent, administration of tocolytic\n- if umbilical cord compression suspected, consider maternal repositioning, amnioinfusion, elevation of presenting fetal part if prolapsed cord is noted\n- if uteroplacental insufficiency suspected, consider lateral positioning, oxygen administration, IV fluid bolus, reduction of uterine contraction frequency\n- note FHR variability during baseline periods to better assess risk of fetal acidemia\n- if bradycardia with minimal or absent variability or prolonged decels or both do not resolve, prompt delivery is recommended",
         "imageName": "Sinusoidal"
     }
 ]
