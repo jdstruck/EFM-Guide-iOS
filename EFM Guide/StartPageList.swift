@@ -29,7 +29,7 @@ struct StartPageList: View {
                     }
                 }
                 Section(header: Text("Systematic Tracing Evaluation")) {
-                        NavigationLink(destination: DefinitionsList()) {
+                        NavigationLink(destination: SystematicEvalView()) {
                             StartPageRow(rowName: "• systematic approach to EFM tracing evaluation\n")
                     }
                 }
