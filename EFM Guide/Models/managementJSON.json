@@ -2,63 +2,71 @@
     {
         "id": 1001,
         "name": "Category I tracing",
-        "meaning": "- meaning (lorem ipsum et cetera)",
-        "management": "- # ctx in 10 minute period averaged over a 30 minute period \n- normal ≤ 5 ctx in 10 min (averaged over 30 min) \n- tachysystole > 5 ctx per 10 min \n- ctx duration, intensity, and relaxation time between ctx also important"
+        "meaning": "- # ctx in 10 minute period averaged over a 30 minute period \n- normal ≤ 5 ctx in 10 min (averaged over 30 min) \n- tachysystole > 5 ctx per 10 min \n- ctx duration, intensity, and relaxation time between ctx also important",
+        "management": "- tachysystole should always be qualified as to presence or absence of associated FHR declerations. \n- term tachysystole applies to both spontaneous and stimulated labor, but clinical response may differ. \n- terms hyperstimulation and hypercontractility are not defined and should be abandoned.",
+        "imageName": "ctx"
     },
     {
         "id": 1002,
-        "name": "Category II tracing,
-        "meaning": "- meaning (lorem ipsum et cetera)",
-        "management": "- the approximate mean FHR rounded to increments of 5 bpm during 10 minute window, excluding accels, decels, and periods of marked FHR variability (> 25 bpm).\n- bradycardia: baseline < 110 bpm.\n- tachycardia: baseline > 160 bpm."
+        "name": "Category II tracing",
+        "meaning": "- the approximate mean FHR rounded to increments of 5 bpm during 10 minute window, excluding accels, decels, and periods of marked FHR variability (> 25 bpm).\n- bradycardia: baseline < 110 bpm.\n- tachycardia: baseline > 160 bpm.",
+        "management": "- must be at least 2 minutes of identifiable baseline segments (not necessarily contiguous) in any 10 minute window otherwise baseline for that period is indeterminate.  In such case, refer to previous 10 minute window baseline.",
+        "imageName": "Baseline"
     },
     {
         "id": 1003,
         "name": "Category III tracing",
-        "meaning": "- meaning (lorem ipsum et cetera)",
-        "management": "- fluctuations in baseline that are irregular in amplitude and frequency\n- visually quantified as amplitude from peak-to-trough in bpm.\n- absent: undetectable change in amplitude\n- minimal: amplitude range ≤ 5 bpm\n- moderate: amplitude range 6-25 bpm\n- marked: amplitude range > 25 bpm",
-        "details": "- determined in 10 minute window, excluding accels and decels.\n- no distinction is made between short-term variability ('beat-to-beat') and long-term variability, because in actual practice they are visually determined as a unit."
+        "meaning": "- fluctuations in baseline that are irregular in amplitude and frequency\n- visually quantified as amplitude from peak-to-trough in bpm.\n- absent: undetectable change in amplitude\n- minimal: amplitude range ≤ 5 bpm\n- moderate: amplitude range 6-25 bpm\n- marked: amplitude range > 25 bpm",
+        "management": "- determined in 10 minute window, excluding accels and decels.\n- no distinction is made between short-term variability ('beat-to-beat') and long-term variability, because in actual practice they are visually determined as a unit.",
+        "imageName": "Variability"
     },
     {
         "id": 1004,
         "name": "Tachysystole",
-        "meaning": "- meaning (lorem ipsum et cetera)",
-        "management": "- visually abrupt increase in FHR, < 30 seconds from onset to peak of accel\n- accel must peak ≥ 15 bpm above baseline and last ≥ 15 seconds from onset to return to baseline\n- accel ≥ 2 minutes is prolonged\n- accel ≥ 10 minutes is baseline change\n- before 32 weeks gestational age, definition accel as above except 10 bpm rise and 10 second duration qualify."
+        "meaning": "- visually abrupt increase in FHR, < 30 seconds from onset to peak of accel\n- accel must peak ≥ 15 bpm above baseline and last ≥ 15 seconds from onset to return to baseline\n- accel ≥ 2 minutes is prolonged\n- accel ≥ 10 minutes is baseline change\n- before 32 weeks gestational age, definition accel as above except 10 bpm rise and 10 second duration qualify.",
+        "management": "",
+        "imageName": "Accel"
     },
     {
         "id": 1005,
         "name": "Minimal variability",
-        "meaning": "- meaning (lorem ipsum et cetera)",
-        "management": "- visually apparent usually symmetric gradual decrease and return of FHR associated with a uterine contraction\n- gradual FHR decrease defined as ≥ 30 seconds from onset to nadir\n- decrease measured from onset to nadir\n- nadir occurs same time as ctx peak\n- in most cases, onset, nadir, recovery of decel are coincident with start, peak, and end of ctx, respectively."
+        "meaning": "- visually apparent usually symmetric gradual decrease and return of FHR associated with a uterine contraction\n- gradual FHR decrease defined as ≥ 30 seconds from onset to nadir\n- decrease measured from onset to nadir\n- nadir occurs same time as ctx peak\n- in most cases, onset, nadir, recovery of decel are coincident with start, peak, and end of ctx, respectively.",
+        "management": "",
+        "imageName": "EarlyDecel"
     },
     {
         "id": 1006,
-        "name": "Intermittant variable decels",
-        "meaning": "- meaning (lorem ipsum et cetera)",
-        "management": "- visually apparent abrupt decrease in FHR\n- abrupt FHR decrease defined as < 30 seconds from onset to nadir\n- decrease measured from onset to nadir\n- FHR decrease ≥ 15 bpm, lasts 15 seconds to 2 minutes duration\n- when variable decels associated with ctx, their onset, depth, and duration commonly vary with successive ctx."
+        "name": "Variable decelerations",
+        "meaning": "- visually apparent abrupt decrease in FHR\n- abrupt FHR decrease defined as < 30 seconds from onset to nadir\n- decrease measured from onset to nadir\n- FHR decrease ≥ 15 bpm, lasts 15 seconds to 2 minutes duration\n- when variable decels associated with ctx, their onset, depth, and duration commonly vary with successive ctx.",
+        "management": "",
+        "imageName": "VariableDecel"
     },
     {
         "id": 1007,
-        "name": "Recurrent variable decels",
-        "meaning": "- meaning (lorem ipsum et cetera)",
-        "management": "- visually apparent usually symmetric gradual decrease and return of FHR associated with a uterine contraction\n- gradual FHR decrease defined as ≥ 30 seconds from onset to nadir\n- size measured from onset to nadir; note that unlike variable decelerations which must be ≥ 15 bpm below baseline, the ACOG definition cites no minimum size of descent for late decelerations\n- decel is delayed, with nadir occurring after peak of contraction\n- in most cases, onset, nadir, recovery of late decel occur after start, peak, and end of ctx respectively."
+        "name": "Late decelerations",
+        "meaning": "- visually apparent usually symmetric gradual decrease and return of FHR associated with a uterine contraction\n- gradual FHR decrease defined as ≥ 30 seconds from onset to nadir\n- size measured from onset to nadir; note that unlike variable decelerations which must be ≥ 15 bpm below baseline, the ACOG definition cites no minimum size of descent for late decelerations\n- decel is delayed, with nadir occurring after peak of contraction\n- in most cases, onset, nadir, recovery of late decel occur after start, peak, and end of ctx respectively.",
+        "management": "",
+        "imageName": "LateDecel",
     },
     {
         "id": 1008,
-        "name": "Recurrent late decels",
-        "meaning": "- meaning (lorem ipsum et cetera)",
-        "management": "- visually apparent decrease in FHR below baseline\n- FHR decrease is ≥ 15 bpm\n- decel duration is ≥ 2 minutes and < 10 minutes (≥ 10 minutes makes the decel a change of FHR baseline and potentially fetal bradycardia if FHR < 110)"
+        "name": "Prolonged decelerations",
+        "meaning": "- visually apparent decrease in FHR below baseline\n- FHR decrease is ≥ 15 bpm\n- decel duration is ≥ 2 minutes and < 10 minutes (≥ 10 minutes makes the decel a change of FHR baseline and potentially fetal bradycardia if FHR < 110)",
+        "management": "",
+        "imageName": "ProlongedDecel"
     },
     {
         "id": 1009,
-        "name": "Fetal tachychardia",
-        "meaning": "- meaning (lorem ipsum et cetera)",
-        "management": "- decels are recurrent when they occur with ≥ 50% of ctx in any 20 minute window; decels occuring with < 50% of ctx are considered intermittent.",
-        "details": "- several terms and findings require further research investigation to determine their predictive value: slow return of FHR after end of ctx; biphasic decels; tachycardia after variable decels; accels preceeding and/or following decels, sometimes called 'shoulders' and 'overshoots'; fluctuations in FHR in the trough of the decel; grading systems for depth and duration of decels."
+        "name": "Decels in general",
+        "meaning": "- decels are recurrent when they occur with ≥ 50% of ctx in any 20 minute window; decels occuring with < 50% of ctx are considered intermittent.",
+        "management": "- several terms and findings require further research investigation to determine their predictive value: slow return of FHR after end of ctx; biphasic decels; tachycardia after variable decels; accels preceeding and/or following decels, sometimes called 'shoulders' and 'overshoots'; fluctuations in FHR in the trough of the decel; grading systems for depth and duration of decels.",
+        "imageName": ""
     },
     {
         "id": 1010,
-        "name": "Prolonged decel/bradycardia",
-        "meaning": "- meaning (lorem ipsum et cetera)",
-        "management": "- specific FHR pattern defined as having a visually apparent, smooth sine wave-like undulating pattern in FHR baseline with a cycle frequency of 3-5 per minute that persists for ≥ 20 minutes.\n- sinusoidal pattern is definitive for Category III tracing interpretation"
+        "name": "Sinusoidal pattern",
+        "meaning": "- specific FHR pattern defined as having a visually apparent, smooth sine wave-like undulating pattern in FHR baseline with a cycle frequency of 3-5 per minute that persists for ≥ 20 minutes.\n- sinusoidal pattern is definitive for Category III tracing interpretation",
+        "management": "",
+        "imageName": "Sinusoidal"
     }
 ]
