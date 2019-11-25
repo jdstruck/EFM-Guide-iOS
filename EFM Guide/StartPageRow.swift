@@ -9,14 +9,14 @@
 import SwiftUI
 
 struct StartPageRow: View {
-    //var definitionobj: DefinitionObject
+    //var def_obj: DefinitionObject
     var rowName: String
 
     var body: some View {
         HStack {
             Text(rowName)
             Spacer()
-            //definitionobj.image
+            //def_obj.image
             //.resizable()
             //.frame(width: 40, height: 40)
         }

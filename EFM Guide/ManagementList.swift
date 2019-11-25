@@ -11,9 +11,9 @@ import SwiftUI
 struct ManagementList: View {
     var body: some View {
         //NavigationView {
-            List(definitionJSON) { landmark in
-                NavigationLink(destination: DefinitionView(definitionobj: landmark)) {
-                    DefinitionRow(landmark: landmark)
+            List(managementJSON) { mgmt_obj in
+                NavigationLink(destination: ManagementView(mgmt_obj: mgmt_obj)) {
+                    ManagementRow(mgmt_obj: mgmt_obj)
                 }
             }
             .navigationBarTitle(Text("Management"))

@@ -12,7 +12,13 @@ import CoreLocation
 struct ManagementObject: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
-    var details: String
-    var quickPoints: String
+    var meaning: String
+    var management: String
+    fileprivate var imageName: String
+}
 
+extension ManagementObject {
+    var image: Image {
+        ImageStore.shared.image(name: imageName)
+    }
 }

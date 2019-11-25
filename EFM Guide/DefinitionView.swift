@@ -9,13 +9,13 @@
 import SwiftUI
 
 struct DefinitionView: View {
-    var definitionobj: DefinitionObject
+    var def_obj: DefinitionObject
 
     var body: some View {
         //NavigationView {
         VStack(alignment: .center) {
 //            VStack(alignment: .leading) {
-//                Text(definitionobj.name)
+//                Text(def_obj.name)
 //                .font(.title)
 //            }
 //            .padding()
@@ -23,10 +23,10 @@ struct DefinitionView: View {
                 
                     HStack(alignment: .top) {
                         NavigationLink(destination: ManagementList()) {
-                            DefinitionManagementButtonRow(landmark: definitionobj)
+                            DefinitionManagementButtonRow(landmark: def_obj)
                         } .padding()
-                        NavigationLink(destination: DetailPictureView(image: definitionobj.image)) {
-                            DefinitionImageButtonRow(landmark: definitionobj)
+                        NavigationLink(destination: DetailPictureView(image: def_obj.image)) {
+                            DefinitionImageButtonRow(landmark: def_obj)
                         } .padding()
                     }
                 }
@@ -36,11 +36,11 @@ struct DefinitionView: View {
                     //.padding()
                 Text("Quick points")
                     .font(.headline)
-                Text(definitionobj.quickPoints)
+                Text(def_obj.quickPoints)
                     .font(.body)
                 Text("\nDetails")
                     .font(.headline)
-                Text(definitionobj.details)
+                Text(def_obj.details)
                     .font(.body)
 
             }
@@ -48,13 +48,13 @@ struct DefinitionView: View {
 
             Spacer()
         }
-        .navigationBarTitle(Text(verbatim: definitionobj.name), displayMode: .inline)
+        .navigationBarTitle(Text(verbatim: def_obj.name), displayMode: .inline)
     //}
          }
 }
 
 struct DefinitionView_Previews: PreviewProvider {
     static var previews: some View {
-        DefinitionView(definitionobj: definitionJSON[0])
+        DefinitionView(def_obj: definitionJSON[0])
     }
 }

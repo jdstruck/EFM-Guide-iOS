@@ -11,7 +11,7 @@ import SwiftUI
 struct StartPageList: View {
     var body: some View {
         NavigationView {
-            //List(definitionJSON) { definitionobj in
+            //List(definitionJSON) { def_obj in
             List {
                 Section(header: Text("Definitions of Tracing Findings")) {
                         NavigationLink(destination: DefinitionsList()) {
@@ -24,7 +24,7 @@ struct StartPageList: View {
                     }
                 }
                 Section(header: Text("Tracing Intrapartum Management")) {
-                        NavigationLink(destination: DefinitionsList()) {
+                        NavigationLink(destination: ManagementList()) {
                             StartPageRow(rowName: "• suggested clinical management responses of tracing findings and interpretations\n")
                     }
                 }

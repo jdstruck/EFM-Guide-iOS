@@ -12,7 +12,7 @@ struct DefinitionsList: View {
     var body: some View {
         //NavigationView {
             List(definitionJSON) { landmark in
-                NavigationLink(destination: DefinitionView(definitionobj: landmark)) {
+                NavigationLink(destination: DefinitionView(def_obj: landmark)) {
                     DefinitionRow(landmark: landmark)
                 }
             }

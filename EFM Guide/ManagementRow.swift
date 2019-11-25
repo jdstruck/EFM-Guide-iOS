@@ -9,13 +9,13 @@
 import SwiftUI
 
 struct ManagementRow: View {
-    var landmark: DefinitionObject
+    var mgmt_obj: ManagementObject
 
     var body: some View {
         HStack {
-            Text(landmark.name)
+            Text(mgmt_obj.name)
             Spacer()
-            landmark.image
+            mgmt_obj.image
             .resizable()
             .frame(width: 40, height: 40)
         }
@@ -25,8 +25,8 @@ struct ManagementRow: View {
 struct ManagementRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DefinitionRow(landmark: definitionJSON[0])
-            DefinitionRow(landmark: definitionJSON[1])
+            ManagementRow(mgmt_obj: managementJSON[0])
+            ManagementRow(mgmt_obj: managementJSON[1])
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }
