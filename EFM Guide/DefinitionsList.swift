@@ -11,8 +11,8 @@ import SwiftUI
 struct DefinitionsList: View {
     var body: some View {
         //NavigationView {
-            List(landmarkData) { landmark in
-                NavigationLink(destination: DefinitionView(landmark: landmark)) {
+            List(definitionJSON) { landmark in
+                NavigationLink(destination: DefinitionView(definitionobj: landmark)) {
                     DefinitionRow(landmark: landmark)
                 }
             }

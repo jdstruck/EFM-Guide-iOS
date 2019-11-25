@@ -1,182 +1,82 @@
 [
     {
+        "id": 1001,
         "name": "Uterine Contractions",
         "management": "",
         "quickPoints": "- # ctx in 10 minute period averaged over a 30 minute period \n- normal ≤ 5 ctx in 10 min (averaged over 30 min) \n- tachysystole > 5 ctx per 10 min \n- ctx duration, intensity, and relaxation time between ctx also important",
         "details": "- tachysystole should always be qualified as to presence or absence of associated FHR declerations. \n- term tachysystole applies to both spontaneous and stimulated labor, but clinical response may differ. \n- terms hyperstimulation and hypercontractility are not defined and should be abandoned.",
-        "category": "Rivers",
-        "city": "Twentynine Palms",
-        "state": "California",
-        "id": 1001,
-        "isFeatured": true,
-        "isFavorite": true,
-        "park": "Joshua Tree National Park",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
         "imageName": "ctx"
     },
     {
+        "id": 1002,
         "name": "Baseline fetal heart rate (FHR)",
         "management": "",
         "quickPoints": "- the approximate mean FHR rounded to increments of 5 bpm during 10 minute window, excluding accels, decels, and periods of marked FHR variability (> 25 bpm).\n- bradycardia: baseline < 110 bpm.\n- tachycardia: baseline > 160 bpm.",
         "details": "- must be at least 2 minutes of identifiable baseline segments (not necessarily contiguous) in any 10 minute window otherwise baseline for that period is indeterminate.  In such case, refer to previous 10 minute window baseline.",
-        "category": "Lakes",
-        "city": "Port Alsworth",
-        "state": "Alaska",
-        "id": 1002,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "Lake Clark National Park and Preserve",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
         "imageName": "Baseline"
     },
     {
+        "id": 1003,
         "name": "Baseline FHR variability",
         "management": "",
         "quickPoints": "- fluctuations in baseline that are irregular in amplitude and frequency\n- visually quantified as amplitude from peak-to-trough in bpm.\n- absent: undetectable change in amplitude\n- minimal: amplitude range ≤ 5 bpm\n- moderate: amplitude range 6-25 bpm\n- marked: amplitude range > 25 bpm",
         "details": "- determined in 10 minute window, excluding accels and decels.\n- no distinction is made between short-term variability ('beat-to-beat') and long-term variability, because in actual practice they are visually determined as a unit.",
-        "category": "Mountains",
-        "city": "Skagway",
-        "state": "Alaska",
-        "id": 1003,
-        "isFeatured": false,
-        "isFavorite": true,
-        "park": "Klondike Gold Rush National Historical Park",
-        "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
-        },
         "imageName": "Variability"
     },
     {
+        "id": 1004,
         "name": "Accelerations",
         "management": "",
         "quickPoints": "- visually abrupt increase in FHR, < 30 seconds from onset to peak of accel\n- accel must peak ≥ 15 bpm above baseline and last ≥ 15 seconds from onset to return to baseline\n- accel ≥ 2 minutes is prolonged\n- accel ≥ 10 minutes is baseline change\n- before 32 weeks gestational age, definition accel as above except 10 bpm rise and 10 second duration qualify.",
         "details": "",
-        "category": "Lakes",
-        "city": "Browning",
-        "state": "Montana",
-        "id": 1004,
-        "isFeatured": true,
-        "isFavorite": true,
-        "park": "Glacier National Park",
-        "coordinates": {
-            "longitude": -113.536248,
-            "latitude": 48.69423
-        },
         "imageName": "Accel"
     },
     {
+        "id": 1005,
         "name": "Early decelerations",
         "management": "",
         "quickPoints": "- visually apparent usually symmetric gradual decrease and return of FHR associated with a uterine contraction\n- gradual FHR decrease defined as ≥ 30 seconds from onset to nadir\n- decrease measured from onset to nadir\n- nadir occurs same time as ctx peak\n- in most cases, onset, nadir, recovery of decel are coincident with start, peak, and end of ctx, respectively.",
         "details": "",
-        "category": "Lakes",
-        "city": "Twin Lakes",
-        "state": "Alaska",
-        "id": 1005,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "Lake Clark National Park and Preserve",
-        "coordinates": {
-            "longitude": -153.849883,
-            "latitude": 60.641684
-        },
         "imageName": "EarlyDecel"
     },
     {
+        "id": 1006,
         "name": "Variable decelerations",
         "management": "",
         "quickPoints": "- visually apparent abrupt decrease in FHR\n- abrupt FHR decrease defined as < 30 seconds from onset to nadir\n- decrease measured from onset to nadir\n- FHR decrease ≥ 15 bpm, lasts 15 seconds to 2 minutes duration\n- when variable decels associated with ctx, their onset, depth, and duration commonly vary with successive ctx.",
         "details": "",
-        "category": "Mountains",
-        "city": "West Glacier",
-        "state": "Montana",
-        "id": 1006,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "Glacier National Park",
-        "coordinates": {
-            "longitude": -113.934831,
-            "latitude": 48.56002
-        },
         "imageName": "VariableDecel"
     },
     {
+        "id": 1007,
         "name": "Late decelerations",
         "management": "",
         "quickPoints": "- visually apparent usually symmetric gradual decrease and return of FHR associated with a uterine contraction\n- gradual FHR decrease defined as ≥ 30 seconds from onset to nadir\n- size measured from onset to nadir; note that unlike variable decelerations which must be ≥ 15 bpm below baseline, the ACOG definition cites no minimum size of descent for late decelerations\n- decel is delayed, with nadir occurring after peak of contraction\n- in most cases, onset, nadir, recovery of late decel occur after start, peak, and end of ctx respectively.",
         "details": "",
-        "category": "Rivers",
-        "city": "Eaking",
-        "state": "Alaska",
-        "id": 1007,
-        "isFeatured": true,
-        "isFavorite": false,
-        "park": "Charley Rivers National Preserve",
-        "coordinates": {
-            "longitude": -143.122586,
-            "latitude": 65.350021
-        },
         "imageName": "LateDecel",
     },
     {
+        "id": 1008,
         "name": "Prolonged decelerations",
         "management": "",
         "quickPoints": "- visually apparent decrease in FHR below baseline\n- FHR decrease is ≥ 15 bpm\n- decel duration is ≥ 2 minutes and < 10 minutes (≥ 10 minutes makes the decel a change of FHR baseline and potentially fetal bradycardia if FHR < 110)",
         "details": "",
-        "category": "Mountains",
-        "city": "Icy Bay",
-        "state": "Alaska",
-        "id": 1008,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "Wrangell-St. Elias National Park and Preserve",
-        "coordinates": {
-            "longitude": -141.518167,
-            "latitude": 60.089917
-        },
         "imageName": "ProlongedDecel"
     },
     {
+        "id": 1009,
         "name": "Decels in general",
         "management": "",
         "quickPoints": "- decels are recurrent when they occur with ≥ 50% of ctx in any 20 minute window; decels occuring with < 50% of ctx are considered intermittent.",
         "details": "- several terms and findings require further research investigation to determine their predictive value: slow return of FHR after end of ctx; biphasic decels; tachycardia after variable decels; accels preceeding and/or following decels, sometimes called 'shoulders' and 'overshoots'; fluctuations in FHR in the trough of the decel; grading systems for depth and duration of decels.",
-        "category": "Lakes",
-        "city": "Willow",
-        "state": "Alaska",
-        "id": 1009,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "State Recreation Area",
-        "coordinates": {
-            "longitude": -150.086103,
-            "latitude": 61.694334
-        },
         "imageName": ""
     },
     {
+        "id": 1010,
         "name": "Sinusoidal pattern",
         "management": "",
         "quickPoints": "- specific FHR pattern defined as having a visually apparent, smooth sine wave-like undulating pattern in FHR baseline with a cycle frequency of 3-5 per minute that persists for ≥ 20 minutes.\n- sinusoidal pattern is definitive for Category III tracing interpretation",
         "details": "",
-        "category": "Lakes",
-        "city": "Newhalem",
-        "state": "Washington",
-        "id": 1010,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "North Cascades National Park",
-        "coordinates": {
-            "longitude": -121.17799,
-            "latitude": 48.495442
-        },
         "imageName": "Sinusoidal"
     }
 ]

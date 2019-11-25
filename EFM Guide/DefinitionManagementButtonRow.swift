@@ -9,11 +9,11 @@
 import SwiftUI
 
 struct DefinitionManagementButtonRow: View {
-    var landmark: Landmark
+    var landmark: DefinitionObject
 
     var body: some View {
         HStack {
-            Text(landmark.name)
+            Text("Management")
             Spacer()
             landmark.image
             .resizable()
@@ -25,8 +25,8 @@ struct DefinitionManagementButtonRow: View {
 struct DefinitionButtonRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DefinitionRow(landmark: landmarkData[0])
-            DefinitionRow(landmark: landmarkData[1])
+            DefinitionRow(landmark: definitionJSON[0])
+            DefinitionRow(landmark: definitionJSON[1])
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }

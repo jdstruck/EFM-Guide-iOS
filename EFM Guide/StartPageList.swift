@@ -11,7 +11,7 @@ import SwiftUI
 struct StartPageList: View {
     var body: some View {
         NavigationView {
-            //List(landmarkData) { landmark in
+            //List(definitionJSON) { definitionobj in
             List {
                 Section(header: Text("Definitions of Tracing Findings")) {
                         NavigationLink(destination: DefinitionsList()) {
