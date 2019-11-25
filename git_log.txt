@@ -1,3 +1,239 @@
+commit 44210001dfc77602a4c8e0250a1ff0d91fbd88d9
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Mon Nov 25 15:51:23 2019 -0500
+
+    add SystematicEvalView, update StartPageList
+
+ EFM Guide/StartPageList.swift      |  2 +-
+ EFM Guide/SystematicEvalView.swift | 35 +++++++++++++++++++++++++++++++++++
+ 2 files changed, 36 insertions(+), 1 deletion(-)
+
+commit b1d6a0f7f0569a53699607ab43d35d3aad021dcb
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Mon Nov 25 15:36:13 2019 -0500
+
+    Management language fixed
+
+ EFM Guide/ManagementView.swift       |  6 ++---
+ EFM Guide/Models/managementJSON.json | 50 ++++++++++++++++++------------------
+ 2 files changed, 28 insertions(+), 28 deletions(-)
+
+commit cd20dcb5dd51f31a0947701d2310abf87c700282
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Mon Nov 25 14:59:24 2019 -0500
+
+    Management Obj->View->Row->List working
+
+ EFM Guide/Models/managementJSON.json | 64 ++++++++++++++++++++----------------
+ 1 file changed, 36 insertions(+), 28 deletions(-)
+
+commit 72d2d29e0a21ccce1db197d19f42bb127e7b3a5a
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Mon Nov 25 14:32:40 2019 -0500
+
+    continue work on Management
+
+ EFM Guide/DefinitionView.swift          | 18 +++++-----
+ EFM Guide/DefinitionsList.swift         |  2 +-
+ EFM Guide/ManagementList.swift          |  6 ++--
+ EFM Guide/ManagementRow.swift           | 10 +++---
+ EFM Guide/ManagementView.swift          | 60 +++++++++++++++++++++++++++++++++
+ EFM Guide/Models/ManagementObject.swift | 10 ++++--
+ EFM Guide/Models/managementJSON.json    | 20 +++++------
+ EFM Guide/StartPageList.swift           |  4 +--
+ EFM Guide/StartPageRow.swift            |  4 +--
+ 9 files changed, 100 insertions(+), 34 deletions(-)
+
+commit 34d39ebf1ba779a34a4bf467089012647b3eb7aa
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Mon Nov 25 10:37:18 2019 -0500
+
+    refactor/rename, add ManagementData/JSON
+
+ EFM Guide/DefinitionImageButtonRow.swift           |   6 +-
+ EFM Guide/DefinitionManagementButtonRow.swift      |   8 +-
+ EFM Guide/DefinitionRow.swift                      |   6 +-
+ EFM Guide/DefinitionView.swift                     |  18 ++--
+ EFM Guide/DefinitionsList.swift                    |   4 +-
+ EFM Guide/ManagementList.swift                     |   4 +-
+ EFM Guide/ManagementRow.swift                      |   6 +-
+ EFM Guide/Models/Data.swift                        |   3 +-
+ EFM Guide/Models/DefinitionObject.swift            |  25 +++++
+ EFM Guide/Models/Landmark.swift                    |  47 --------
+ EFM Guide/Models/ManagementObject.swift            |  18 ++++
+ EFM Guide/Models/managementJSON.json               |  64 +++++++++++
+ .../{landmarkData.json => definitionJSON.json}     | 120 ++-------------------
+ EFM Guide/StartPageList.swift                      |   2 +-
+ EFM Guide/StartPageRow.swift                       |   8 +-
+ EFM Guide/Supporting Views/MapView.swift           |  10 +-
+ 16 files changed, 155 insertions(+), 194 deletions(-)
+
+commit 4fc95448eb41374f259b4e61d36d58bd709cdf0f
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Sat Nov 23 19:02:22 2019 -0500
+
+    update StartPageTabView
+
+ EFM Guide/StartPageTabView.swift | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit 405a76951ebc15a31f1cb1a3b2f60e45c00007d5
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Wed Nov 20 10:40:53 2019 -0500
+
+    continue working on tab view on start page
+
+ EFM Guide/StartPageList.swift    | 47 +++++++++++++++++++---------------------
+ EFM Guide/StartPageTabView.swift | 32 +++++++++++++++++++++++++++
+ 2 files changed, 54 insertions(+), 25 deletions(-)
+
+commit 5fbf2c24ded32d3713a7dc8562b41a89ec12955e
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Wed Nov 20 10:29:16 2019 -0500
+
+    begin working on tab view on start page
+
+ EFM Guide/StartPageList.swift | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 43bc49416bd4f97eaf79c98a38ea80bc30b4de55
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Wed Nov 20 10:20:57 2019 -0500
+
+    update startpage
+
+ EFM Guide/StartPageList.swift | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+commit aee26a8dd938cba5de3432a339f58ed68c3a000d
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Wed Nov 20 10:18:00 2019 -0500
+
+    update startpage
+
+ EFM Guide/StartPageList.swift | 26 +++++++++++++++++++++-----
+ 1 file changed, 21 insertions(+), 5 deletions(-)
+
+commit 633b8471292f79497c1f5233c67b3718d5833a01
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Mon Nov 18 12:12:27 2019 -0500
+
+    removed DefinitionView title, compact view
+
+ EFM Guide/DefinitionView.swift | 10 +++++-----
+ EFM Guide/ManagementList.swift |  6 +++---
+ 2 files changed, 8 insertions(+), 8 deletions(-)
+
+commit c083e36dd3a8e85f803a343a5735cf3a160a97f8
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Mon Nov 18 12:04:49 2019 -0500
+
+    fixed poor nesting of NavigationViews: i.e. do not include NavigationView in inner views, only use NavigationLinks
+
+ EFM Guide/DefinitionView.swift  |  4 ++--
+ EFM Guide/DefinitionsList.swift | 10 +++++-----
+ EFM Guide/StartPageList.swift   | 19 +++++++++++--------
+ 3 files changed, 18 insertions(+), 15 deletions(-)
+
+commit a1f78332d0b1c490d3f8e255dca3b8a38f8a4a98
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Mon Nov 18 10:33:15 2019 -0500
+
+    create and add remaining views, i.e. StartPageList/Row, ManagementList/Row
+
+ EFM Guide/DefinitionsList.swift | 3 +++
+ EFM Guide/StartPageList.swift   | 2 ++
+ 2 files changed, 5 insertions(+)
+
+commit 799044752cbbc765c38c5f382ec3304ff229b5b8
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Mon Nov 18 10:14:36 2019 -0500
+
+    create and add remaining views, i.e. StartPageList/Row, ManagementList/Row
+
+ ...tonRow.swift => DefinitionImageButtonRow.swift} |  4 +--
+ ...w.swift => DefinitionManagementButtonRow.swift} |  4 +--
+ .../{Definition.swift => DefinitionView.swift}     | 10 +++----
+ EFM Guide/DefinitionsList.swift                    |  4 +--
+ EFM Guide/ManagementList.swift                     |  2 +-
+ EFM Guide/ManagementRow.swift                      | 33 +++++++++++++++++++++
+ EFM Guide/SceneDelegate.swift                      |  2 +-
+ EFM Guide/StartPageList.swift                      | 32 ++++++++++++++++++++
+ EFM Guide/StartPageRow.swift                       | 34 ++++++++++++++++++++++
+ 9 files changed, 112 insertions(+), 13 deletions(-)
+
+commit 9f02783021378f81c550036bd1ee0127859b9170
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Fri Nov 15 17:09:49 2019 -0500
+
+    rename other files, continue to improve image class
+
+ EFM Guide/ContentView.swift                             | 15 ++++++++++++++-
+ EFM Guide/{LandmarkDetail.swift => Definition.swift}    |  4 ++--
+ EFM Guide/{LandmarkRow.swift => DefinitionRow.swift}    |  6 +++---
+ EFM Guide/{LandmarkList.swift => DefinitionsList.swift} |  8 ++++----
+ EFM Guide/DetailImageButtonRow.swift                    |  4 ++--
+ EFM Guide/DetailManagementButtonRow.swift               |  4 ++--
+ EFM Guide/ManagementList.swift                          |  6 +++---
+ EFM Guide/SceneDelegate.swift                           |  2 +-
+ EFM Guide/Supporting Views/DetailPictureView.swift      | 17 ++++++++++++++---
+ 9 files changed, 45 insertions(+), 21 deletions(-)
+
+commit 201df18dd694aac24163e62ae43848d573398fde
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Wed Nov 13 10:33:58 2019 -0500
+
+    rename CirleImage to DetailPictureView, work on .horizontal. Needs better scale
+
+ EFM Guide/LandmarkDetail.swift                     |  2 +-
+ EFM Guide/Supporting Views/CircleImage.swift       | 26 -------------------
+ EFM Guide/Supporting Views/DetailPictureView.swift | 29 ++++++++++++++++++++++
+ 3 files changed, 30 insertions(+), 27 deletions(-)
+
+commit 594dcc7e3cf96fa760d11f68aa3db740888b3f2a
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Wed Nov 13 09:53:00 2019 -0500
+
+    add ManagementList, begin to rework CircleImage class
+
+ EFM Guide/DetailImageButtonRow.swift         |  2 +-
+ EFM Guide/LandmarkDetail.swift               | 20 ++++++++++-------
+ EFM Guide/ManagementList.swift               | 32 ++++++++++++++++++++++++++++
+ EFM Guide/Supporting Views/CircleImage.swift |  6 +++---
+ 4 files changed, 48 insertions(+), 12 deletions(-)
+
+commit 91c202f1cdcf32cf4ce08aedf1941012ff3a7b35
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Wed Nov 13 08:59:11 2019 -0500
+
+    add new details page image button, rename management button
+
+ EFM Guide/DetailImageButtonRow.swift               | 33 ++++++++++++++++++++++
+ ...onRow.swift => DetailManagementButtonRow.swift} |  2 +-
+ EFM Guide/LandmarkDetail.swift                     |  7 +++--
+ 3 files changed, 39 insertions(+), 3 deletions(-)
+
+commit 1b92857273b09068ee224ab5b5dd5c00adc67e87
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Mon Nov 11 10:38:31 2019 -0500
+
+    DetailButtonRow
+
+ EFM Guide/DetailButtonRow.swift |  33 ++++
+ EFM Guide/LandmarkDetail.swift  |  19 +--
+ EFM Guide/LandmarkRow.swift     |   1 -
+ git_log.txt                     | 348 ++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 384 insertions(+), 17 deletions(-)
+
+commit 18f2b41f5fc367b49c496dd2106cbe999e3cf38b
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Mon Nov 11 10:08:28 2019 -0500
+
+    README
+
+ README.md | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+
 commit 2006e295b056c71de9c77abe8e1164cac29edb3c
 Author: Jesse Struck <jdstruck@gmail.com>
 Date:   Sun Nov 10 16:44:41 2019 -0500
