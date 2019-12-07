@@ -7,6 +7,17 @@
 //
 
 import SwiftUI
+let about_app_text = """
+Written to put reference information about electronic fetal monitoring in the hands of clinicians, students, and residents at the point of care.
+
+Content + Design: Joshua Steinberg MD & Tekoa King CNM
+Programmer: Jesse Struck, Binghamton University, Binghamton NY; Joshua Steinberg MD
+
+Feedback: jds.pocapps@gmail.com
+Platform: iOS 13 and later
+Version: 4.0 beta
+Copyright: December 2019
+"""
 
 struct AboutAppView: View {
     var body: some View {
@@ -22,7 +33,7 @@ struct AboutAppView: View {
                 
                 Text("Development of EFM guide")
                     .font(.headline)
-                Text("\nWritten to put reference information about electronic fetal monitoring in the hands of clinicians, students, and residents at the point of care.\n\nContent + Design: Joshua Steinberg MD & Tekoa King CNM\nProgrammer: Jesse Struck, Binghamton University, Binghamton NY; Joshua Steinberg MD\n\nFeedback: jds.pocapps@gmail.com\nPlatform: iOS 13 and later\nVersion: 4.0 beta\nCopyright: December 2019")
+                Text(about_app_text)
                     .font(.body)
 
             }
