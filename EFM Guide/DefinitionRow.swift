@@ -9,13 +9,13 @@
 import SwiftUI
 
 struct DefinitionRow: View {
-    var landmark: DefinitionObject
+    var definition_obj: DefinitionObject
 
     var body: some View {
         HStack {
-            Text(landmark.name)
+            Text(definition_obj.name)
             Spacer()
-            landmark.image
+            definition_obj.image
             .resizable()
             .frame(width: 40, height: 40)
         }
@@ -25,8 +25,8 @@ struct DefinitionRow: View {
 struct LandmarkRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DefinitionRow(landmark: definitionJSON[0])
-            DefinitionRow(landmark: definitionJSON[1])
+            DefinitionRow(definition_obj: definitionJSON[0])
+            DefinitionRow(definition_obj: definitionJSON[1])
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }

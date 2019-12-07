@@ -13,7 +13,7 @@ struct DefinitionsList: View {
         //NavigationView {
             List(definitionJSON) { landmark in
                 NavigationLink(destination: DefinitionView(def_obj: landmark)) {
-                    DefinitionRow(landmark: landmark)
+                    DefinitionRow(definition_obj: landmark)
                 }
             }
             //.navigationBarHidden(true)

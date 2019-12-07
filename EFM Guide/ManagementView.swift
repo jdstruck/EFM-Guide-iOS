@@ -23,10 +23,10 @@ struct ManagementView: View {
 //
 //                    HStack(alignment: .top) {
 //                        NavigationLink(destination: ManagementList()) {
-//                            DefinitionManagementButtonRow(landmark: mgmt_obj)
+//                            DefinitionManagementButtonRow(definition_obj: mgmt_obj)
 //                        } .padding()
 //                        NavigationLink(destination: DetailPictureView(image: mgmt_obj.image)) {
-//                            DefinitionImageButtonRow(landmark: mgmt_obj)
+//                            DefinitionImageButtonRow(definition_obj: mgmt_obj)
 //                        } .padding()
 //                    }
 //                }

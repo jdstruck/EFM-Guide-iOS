@@ -25,8 +25,8 @@ struct DefinitionManagementButtonRow: View {
 struct DefinitionButtonRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DefinitionRow(landmark: definitionJSON[0])
-            DefinitionRow(landmark: definitionJSON[1])
+            DefinitionRow(definition_obj: definitionJSON[0])
+            DefinitionRow(definition_obj: definitionJSON[1])
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }

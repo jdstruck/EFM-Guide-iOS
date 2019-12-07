@@ -12,14 +12,29 @@ struct StartPageTabView: View {
     var body: some View {
         TabView {
             StartPageList()
-                .tabItem {Text("Home")
-            }
-            ManagementList()
-                .tabItem {Text("Management")
-            }
-            DefinitionsList()
-                .tabItem {Text("Definitions")
-            }
+            //Text("First View")
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+            } .tag(0)
+            //ManagementList()
+            Text("Second View")
+                .tabItem {
+                    Image(systemName: "exclamationmark.triangle")
+                    Text("Disclaimer")
+            } .tag(1)
+            //DefinitionsList()
+            Text("Third View")
+                .tabItem {
+                    Image(systemName: "info.circle")
+                    Text("About App")
+            } .tag(2)
+            
+            Text("Fourth View")
+                .tabItem {
+                    Image(systemName: "book")
+                    Text("References")
+            } .tag(2)
         }
     }
 }
