@@ -12,29 +12,25 @@ struct StartPageTabView: View {
     var body: some View {
         TabView {
             StartPageList()
-            //Text("First View")
                 .tabItem {
                     Image(systemName: "house")
                     Text("Home")
             } .tag(0)
-            //ManagementList()
-            Text("Second View")
+            DisclaimerView()
                 .tabItem {
                     Image(systemName: "exclamationmark.triangle")
                     Text("Disclaimer")
             } .tag(1)
-            //DefinitionsList()
-            Text("Third View")
+            AboutAppView()
                 .tabItem {
                     Image(systemName: "info.circle")
                     Text("About App")
             } .tag(2)
-            
-            Text("Fourth View")
+            ReferencesView()
                 .tabItem {
                     Image(systemName: "book")
                     Text("References")
-            } .tag(2)
+            } .tag(3)
         }
     }
 }
@@ -42,7 +38,7 @@ struct StartPageTabView: View {
 struct StartPageTabView_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone XS Max", "iPhone SE"], id: \.self) { deviceName in
-            StartPageList()
+            StartPageTabView()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }
