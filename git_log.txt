@@ -1,3 +1,92 @@
+commit 846a29d66f8a2f42d36016c7015fafd64970df2a
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Sat Dec 7 23:24:48 2019 -0500
+
+    big clean up and refactor; improve StartPageList/Row layout
+
+ EFM Guide/DefinitionImageButtonRow.swift           | 13 +++++----
+ EFM Guide/DefinitionManagementButtonRow.swift      | 13 +++++----
+ EFM Guide/DefinitionView.swift                     | 30 +++++++--------------
+ EFM Guide/DefinitionsList.swift                    | 16 +++++------
+ .../{StartPageTabView.swift => MainTabView.swift}  |  6 ++---
+ EFM Guide/ManagementList.swift                     | 14 +++++-----
+ EFM Guide/SceneDelegate.swift                      |  2 +-
+ EFM Guide/StartPageList.swift                      | 31 ++++++++++++----------
+ EFM Guide/StartPageRow.swift                       | 12 ++++++---
+ EFM Guide/SystematicEvalView.swift                 |  2 +-
+ 10 files changed, 68 insertions(+), 71 deletions(-)
+
+commit 6009ff725588780e7f3250b2df0b61621a4412d3
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Sat Dec 7 16:05:02 2019 -0500
+
+    minor refactor of Disclaimer/About/References text
+
+ EFM Guide/AboutAppView.swift   | 13 ++++++++++++-
+ EFM Guide/DisclaimerView.swift | 16 +++++++++++++++-
+ EFM Guide/ReferencesView.swift | 25 ++++++++++++-------------
+ 3 files changed, 39 insertions(+), 15 deletions(-)
+
+commit 74ae5c8da8eb6639d7b03351208c44e1526a129f
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Sat Dec 7 15:49:07 2019 -0500
+
+    Tabs configured, TODO: consolidate/refactor, check that everything is actually hooked up correctly
+
+ EFM Guide/AboutAppView.swift              |  40 +++++++++++++++++++++++
+ EFM Guide/DisclaimerView.swift            |  40 +++++++++++++++++++++++
+ EFM Guide/ReferencesView.swift            |  52 ++++++++++++++++++++++++++++++
+ EFM Guide/Resources/charleyrivers.jpg     | Bin 229148 -> 0 bytes
+ EFM Guide/Resources/chilkoottrail.jpg     | Bin 63243 -> 0 bytes
+ EFM Guide/Resources/chincoteague.jpg      | Bin 129431 -> 0 bytes
+ EFM Guide/Resources/hiddenlake.jpg        | Bin 261088 -> 0 bytes
+ EFM Guide/Resources/lakemcdonald.jpg      | Bin 254380 -> 0 bytes
+ EFM Guide/Resources/rainbowlake.jpg       | Bin 243387 -> 0 bytes
+ EFM Guide/Resources/silversalmoncreek.jpg | Bin 309101 -> 0 bytes
+ EFM Guide/Resources/stmarylake.jpg        | Bin 199022 -> 0 bytes
+ EFM Guide/Resources/turtlerock.jpg        | Bin 276013 -> 0 bytes
+ EFM Guide/Resources/twinlake.jpg          | Bin 178148 -> 0 bytes
+ EFM Guide/Resources/umbagog.jpg           | Bin 279040 -> 0 bytes
+ EFM Guide/StartPageTabView.swift          |  14 +++-----
+ 15 files changed, 137 insertions(+), 9 deletions(-)
+
+commit 0822bafa04e1c9bdf81cebb1f51599ddbc789ec3
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Sat Dec 7 14:57:43 2019 -0500
+
+    Tabs work
+
+ EFM Guide/DefinitionImageButtonRow.swift      |  4 ++--
+ EFM Guide/DefinitionManagementButtonRow.swift |  4 ++--
+ EFM Guide/DefinitionRow.swift                 | 10 ++++-----
+ EFM Guide/DefinitionsList.swift               |  2 +-
+ EFM Guide/ManagementView.swift                |  4 ++--
+ EFM Guide/SceneDelegate.swift                 |  2 +-
+ EFM Guide/StartPageRow.swift                  |  7 ++----
+ EFM Guide/StartPageTabView.swift              | 31 ++++++++++++++++++++-------
+ 8 files changed, 38 insertions(+), 26 deletions(-)
+
+commit 1d5f92013da924558d9368254dba78ab9838c45f
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Mon Nov 25 16:03:48 2019 -0500
+
+    update README
+
+ README.md | 37 ++++++++++++++++++++++++++++++++++---
+ 1 file changed, 34 insertions(+), 3 deletions(-)
+
+commit 4dd7c2be60f5dec7d7a3f24c1ff4c88c220f7952
+Author: Jesse Struck <jdstruck@gmail.com>
+Date:   Mon Nov 25 15:54:05 2019 -0500
+
+    update screenshots and log
+
+ ...n Shot - iPhone 6s - 2019-11-25 at 15.52.37.png | Bin 0 -> 108532 bytes
+ ...n Shot - iPhone 6s - 2019-11-25 at 15.52.46.png | Bin 0 -> 273795 bytes
+ ...n Shot - iPhone 6s - 2019-11-25 at 15.52.59.png | Bin 0 -> 200360 bytes
+ git_log.txt                                        | 236 +++++++++++++++++++++
+ 4 files changed, 236 insertions(+)
+
 commit 44210001dfc77602a4c8e0250a1ff0d91fbd88d9
 Author: Jesse Struck <jdstruck@gmail.com>
 Date:   Mon Nov 25 15:51:23 2019 -0500

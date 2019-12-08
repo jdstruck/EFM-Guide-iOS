@@ -9,8 +9,11 @@ Note: I spent the first week researching SwiftUI and playing around with tutoria
 By end of Project 6, the app is mostly completed.
 
 Still TODO
-[ ] Tracing interpretations
-[ ] Finish tab buttons on bottom
+[x] Tracing interpretations
+[x] Finish tab buttons on bottom
+
+* Dec 7
+  * Finish tab view at the bottom, as well as additional tab content
 
 * Nov 25
   * refactor/rename, add ManagementData/JSON

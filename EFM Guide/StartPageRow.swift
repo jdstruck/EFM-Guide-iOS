@@ -16,9 +16,9 @@ struct StartPageRow: View {
         VStack(alignment: .leading) {
             Text(rowName)
                 .bold()
-            .font(.system(size: 20))
+            .font(.system(size: 18))
             Text(rowDetails)
-                .font(.system(size: 16))
+                .font(.system(size: 14))
             Spacer()
         }
     }
