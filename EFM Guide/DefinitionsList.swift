@@ -10,17 +10,17 @@ import SwiftUI
 
 struct DefinitionsList: View {
     var body: some View {
-        //NavigationView {
+        VStack {
+            Text("Choose term to review definition(s):")
+            .multilineTextAlignment(.center)
             List(definitionJSON) { landmark in
-                NavigationLink(destination: DefinitionView(def_obj: landmark)) {
-                    DefinitionRow(definition_obj: landmark)
+                    NavigationLink(destination: DefinitionView(definition_obj: landmark)) {
+                        DefinitionRow(definition_obj: landmark)
+                    }
                 }
-            }
-            //.navigationBarHidden(true)
-            .navigationBarTitle(Text("Definitions"))
-            //.navigationBarBackButtonHidden(true)
+                .navigationBarTitle(Text("Definitions"))
             .navigationViewStyle(StackNavigationViewStyle())
-        //}
+        }
     }
 }
 

@@ -30,6 +30,6 @@ struct SystematicEvalView: View {
 
 struct SystematicEvalView_Previews: PreviewProvider {
     static var previews: some View {
-        DefinitionView(def_obj: definitionJSON[0])
+        SystematicEvalView()
     }
 }

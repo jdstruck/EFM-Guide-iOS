@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct StartPageTabView: View {
+struct MainTabView: View {
     var body: some View {
         TabView {
             StartPageList()
@@ -34,11 +34,11 @@ struct StartPageTabView: View {
         }
     }
 }
-
+//TODO: scale picture off DefinitionsView
 struct StartPageTabView_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone XS Max", "iPhone SE"], id: \.self) { deviceName in
-            StartPageTabView()
+            MainTabView()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }

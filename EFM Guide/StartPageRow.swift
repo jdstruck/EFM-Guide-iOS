@@ -9,12 +9,16 @@
 import SwiftUI
 
 struct StartPageRow: View {
-    //var def_obj: DefinitionObject
     var rowName: String
+    var rowDetails: String
 
     var body: some View {
-        HStack {
+        VStack(alignment: .leading) {
             Text(rowName)
+                .bold()
+            .font(.system(size: 20))
+            Text(rowDetails)
+                .font(.system(size: 16))
             Spacer()
         }
     }
@@ -23,8 +27,8 @@ struct StartPageRow: View {
 struct StartPageRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DefinitionRow(definition_obj: definitionJSON[0])
-            DefinitionRow(definition_obj: definitionJSON[1])
+            StartPageRow(rowName: "• definitions of individual EFM tracing findings and patterns with pictures\n", rowDetails: "• category I, II, III EFM tracing interpretations")
+            StartPageRow(rowName: "• category I, II, III EFM tracing interpretations\n", rowDetails: "• category I, II, III EFM tracing interpretations")
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }

@@ -13,30 +13,33 @@ struct StartPageList: View {
         NavigationView {
             //List(definitionJSON) { def_obj in
             List {
-                Section(header: Text("Definitions of Tracing Findings")) {
+                Section() {
                         NavigationLink(destination: DefinitionsList()) {
-                            StartPageRow(rowName: "• definitions of individual EFM tracing findings and patterns with pictures\n")
+                            StartPageRow(rowName: "Definitions of Tracing Findings",
+                                         rowDetails: "• definitions of individual EFM tracing findings and patterns with pictures")
                     }
-                }
-                Section(header: Text("Tracing Interpretations")) {
+                }.padding()
+                Section() {
                         NavigationLink(destination: DefinitionsList()) {
-                            StartPageRow(rowName: "• category I, II, III EFM tracing interpretations\n")
-                    }
-                }
-                Section(header: Text("Tracing Intrapartum Management")) {
+                            StartPageRow(rowName: "Tracing Interpretations",
+                                         rowDetails: "• category I, II, III EFM tracing interpretations")
+                            }
+                }.padding()
+                Section() {
                         NavigationLink(destination: ManagementList()) {
-                            StartPageRow(rowName: "• suggested clinical management responses of tracing findings and interpretations\n")
+                            StartPageRow(rowName: "Tracing Intrapartum Management",
+                                         rowDetails: "• suggested clinical management responses of tracing findings and interpretations")
                     }
-                }
-                Section(header: Text("Systematic Tracing Evaluation")) {
+                }.padding()
+                Section() {
                         NavigationLink(destination: SystematicEvalView()) {
-                            StartPageRow(rowName: "• systematic approach to EFM tracing evaluation\n")
+                            StartPageRow(rowName: "Systematic Tracing Evaluation",
+                                         rowDetails: "• systematic approach to EFM tracing evaluation")
                     }
-                }
+                }.padding()
             }
             .navigationBarTitle(Text("EFM Guide"))
             .navigationViewStyle(StackNavigationViewStyle())
-        //.listStyle(GroupedListStyle())
         }
     }
 }
